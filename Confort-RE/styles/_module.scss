@@ -1,0 +1,21 @@
+@mixin landscape {
+    @media (max-width: 992.9px) {
+        @content;
+    }
+}
+
+@mixin portrait {
+    @media (max-width: 568.9px) {
+        @content;
+    }
+}
+@mixin medium {
+    @media (max-width: 380.9px) {
+        @content;
+    }
+}
+@mixin small {
+    @media (max-width: 350.9px) {
+        @content;
+    }
+}
