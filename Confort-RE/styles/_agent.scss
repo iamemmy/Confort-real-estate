@@ -1,52 +1,66 @@
 .hello {
-    background-color: green;
+  background-color: green;
 }
-#agentArea{
-    .arrows{
-       font-size: 20px;
-       border: 1px dotted #808080;
-       border-radius: 50%;
-       padding: 20px 22px;
-       transition: background-color 1s ease;
-       &:first-child{
-           margin-right: 20px;
-        }
-        
-        &:hover{
-            background-color: #808080;
-            border: none;
-            color: #fff;
-       }
+#agentArea {
+  .arrows {
+    font-size: 20px;
+    border: 1px dotted #808080;
+    border-radius: 50%;
+    padding: 20px 22px;
+    transition: background-color 1s ease;
+    cursor: pointer;
+    &:active{
+        box-shadow: 0 0 10px 0 0 #808080;
     }
-    .agent-box{
-        // border: solid;
-        position: relative;
-        overflow: hidden;
-        &:hover img{
-            scale: 1.1;
-         }
-
-
-        img{
-           min-height: 240px;
-           max-height: 240px;
-           aspect-ratio: 1/1;
-           transition:  scale .45s ease-out;
-        }
-        .agent-data{
-            position: absolute;
-            bottom: 10px;
-            width: 85%;
-            left: 13px;
-            line-height: 10px;
-           
-        }
-        .agent-name{
-            font-weight: bold;
-            font-size: 18px;
-        }
-        .agent-description{
-            font-size: 12px;
-        }
+    &:first-child {
+      margin-right: 20px;
     }
+
+    &:hover {
+      background-color: #808080;
+      border: none;
+      color: #fff;
+    }
+  }
+  .agent-box {
+    // border: solid;
+    position: relative;
+    overflow: hidden;
+    &:hover img {
+      scale: 1.1;
+    }
+
+    img {
+      min-height: 290px;
+      max-height: 290px;
+      width: 100%;
+      aspect-ratio: 1/1;
+      transition: scale 0.45s ease-out;
+      @include portrait {
+        min-height: 450px;
+        max-height: 450px;
+      }
+      @include small{
+        min-height: 363px;
+        max-height: 363px;
+      }
+    }
+    .agent-data {
+      position: absolute;
+      bottom: 10px;
+      width: 85%;
+      left: 13px;
+      line-height: 10px;
+      @include landscape {
+        width: 92%;
+      }
+    }
+    .agent-name {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .agent-description {
+      font-size: 12px;
+    }
+  }
 }
