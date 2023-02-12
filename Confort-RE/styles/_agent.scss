@@ -1,3 +1,52 @@
 .hello {
     background-color: green;
 }
+#agentArea{
+    .arrows{
+       font-size: 20px;
+       border: 1px dotted #808080;
+       border-radius: 50%;
+       padding: 20px 22px;
+       transition: background-color 1s ease;
+       &:first-child{
+           margin-right: 20px;
+        }
+        
+        &:hover{
+            background-color: #808080;
+            border: none;
+            color: #fff;
+       }
+    }
+    .agent-box{
+        // border: solid;
+        position: relative;
+        overflow: hidden;
+        &:hover img{
+            scale: 1.1;
+         }
+
+
+        img{
+           min-height: 240px;
+           max-height: 240px;
+           aspect-ratio: 1/1;
+           transition:  scale .45s ease-out;
+        }
+        .agent-data{
+            position: absolute;
+            bottom: 10px;
+            width: 85%;
+            left: 13px;
+            line-height: 10px;
+           
+        }
+        .agent-name{
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .agent-description{
+            font-size: 12px;
+        }
+    }
+}
