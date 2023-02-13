@@ -102,11 +102,6 @@
   right: 10%;
   font-size: 1.1rem;
 }
-
-.hello {
-  background-color: green;
-}
-
 #agentArea .arrows {
   font-size: 20px;
   border: 1px dotted #808080;
@@ -114,6 +109,9 @@
   padding: 20px 22px;
   -webkit-transition: background-color 1s ease;
   transition: background-color 1s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 
