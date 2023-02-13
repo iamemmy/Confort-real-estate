@@ -1,13 +1,12 @@
-.hello {
-  background-color: green;
-}
-
 #agentArea .arrows {
   font-size: 20px;
   border: 1px dotted #808080;
   border-radius: 50%;
   padding: 20px 22px;
   transition: background-color 1s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 #agentArea .arrows:active {
