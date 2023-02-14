@@ -101,6 +101,8 @@
 #footer .form-container-div {
   background-color: #383838;
   border-radius: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 #footer .form-container-div .form-control {
   background-color: #383838 !important;
