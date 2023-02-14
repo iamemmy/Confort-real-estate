@@ -1,3 +1,28 @@
+#navlink {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+}
+#navlink .nav--item:hover {
+  color: red !important;
+}
+#navlink .navbar--toggler:focus {
+  box-shadow: none !important;
+}
+
+@media (max-width: 767px) {
+  #navlink {
+    font-size: 14px;
+  }
+  #navlink .sign-in-up {
+    width: 50%;
+    margin: auto;
+  }
+  #navlink .nav-bar-pt {
+    padding-top: 10px;
+  }
+}
+
 .bg-wrapper .bg_img1 {
   background-image: url(../images/little-home.jpg);
 }
@@ -144,4 +169,57 @@
 }
 #agentArea .agent-box .agent-description {
   font-size: 12px;
+}
+
+#footer {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+}
+#footer .text-simple {
+  text-align: justify;
+}
+#footer .form-container-div {
+  background-color: #383838;
+  border-radius: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#footer .form-container-div .form-control {
+  background-color: #383838 !important;
+  border: none;
+}
+#footer .form-container-div .form-control::-moz-placeholder {
+  color: white;
+}
+#footer .form-container-div .form-control::placeholder {
+  color: white;
+}
+#footer .form-container-div .form-control:focus {
+  box-shadow: none;
+}
+#footer .form-container-div .my-arrow {
+  margin-right: 1rem;
+  background-color: #383838;
+  border: none;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .icon-div {
+    min-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .icon-div {
+    min-width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  #footer {
+    font-size: 14px;
+  }
+  #footer .slogan-center {
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
