@@ -1,8 +1,3 @@
-$primary-color:#fff;
-$secondary-color:  rgb(214, 14,10);
-$tertiary-color: #000;
-
-
 .bg-wrapper{
 
     .bg_img1 {
@@ -44,9 +39,15 @@ $tertiary-color: #000;
    
     h1 {
     font-size: 3.3rem !important;
-    color: $primary-color;
+    color: getColor(color01);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    @include landscape {
+        font-size: 2.8rem !important;
+    }
+    @include portrait {
+        font-size: 2.2rem !important;
+    }
 }
 }
 
@@ -59,31 +60,70 @@ $tertiary-color: #000;
     align-items: center;
 
     .hero-section_button {
-    border: 1px solid $secondary-color;
-    background-color: $secondary-color;
+    border: 1px solid getColor(color02);
+    background-color: getColor(color02);
     text-decoration: none;
     font-size: 1.2rem;
     text-align: center;
-    color: $primary-color;
+    color: getColor(color01);
     padding: 8px 40px;
     margin-top: 15px;
-    border-radius: 20px;
+    border-radius: 7px;
 }
 }
 
- .search-bar_div {
-     border:1px solid $primary-color;
+ .search-bar-div {
+     border:1px solid getColor(color01);
      border-radius: 5px;
-     background-color: $primary-color;
+     background-color: getColor(color01);
      display: flex;
      justify-content: center;
      align-items: center;
-     width: 80vw;
+     width: 60vw;
      padding: 10px 20px;
      margin: 15px auto;
      text-align: center;
      position: absolute;
-     top:80%;
-     right: 10%;
+     left: 50%;
+     top: 80%;
+     transform: translate(-50%, 0);
      font-size: 1.1rem;
+     @include landscape2 {
+        display: block;
+        background-color: inherit;
+        border: none;
+     }
+     .search-bar1 {
+        @include landscape2 {
+            background-color: getColor(color01);
+            margin-bottom: 0.8rem;
+            padding: 0.2rem 0;
+            border-radius: 2px;
+        }
+     }
+     .search-bar2 {
+        border-left: 1px solid getColor(color03);
+        padding-left: 1rem;
+        @include landscape2 {
+            border-left: none;
+            background-color: getColor(color01);
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
+            padding-left: 4rem;
+            border-radius: 2px;
+        }
+        input {
+            border: none;
+            outline: none;
+        }
+     }
+}
+
+.select-apartment {
+    border: none !important;
+    background-color: getColor(color01) !important;
+    &:hover {
+        background: inherit !important;
+        border: none !important;
+    }
 }
