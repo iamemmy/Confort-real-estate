@@ -1,25 +1,22 @@
-#navlink {
+#navlink-section {
   font-family: "Lato";
   font-size: 16px;
   font-weight: 400;
 }
-#navlink .nav--item:hover {
+#navlink-section .nav--item:hover {
   color: red !important;
 }
-#navlink .navbar--toggler:focus {
+#navlink-section .navbar--toggler:focus {
   box-shadow: none !important;
 }
 
-@media (max-width: 767px) {
-  #navlink {
-    font-size: 14px;
+@media (max-width: 790px) {
+  #navlink-section {
+    font-size: 15px !important;
   }
-  #navlink .sign-in-up {
+  #navlink-section .sign-in-up {
     width: 50%;
     margin: auto;
-  }
-  #navlink .nav-bar-pt {
-    padding-top: 10px;
   }
 }
 .bg-wrapper .bg_img1 {
@@ -185,8 +182,8 @@
 #footer .form-container-div {
   background-color: #383838;
   border-radius: 0.5rem;
-  width: -moz-fit-content;
-  width: fit-content;
+  min-width: 80%;
+  max-width: 90%;
 }
 #footer .form-container-div .form-control {
   background-color: #383838 !important;
@@ -224,5 +221,11 @@
   }
   #footer .slogan-center {
     text-align: center;
+  }
+  #footer .form-container-div {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,8 @@
-#navlink {
+#navlink-section {
   font-family: "Lato";
   font-size: 16px;
   font-weight: 400;
+
   .nav--item:hover {
     color: red !important;
   }
@@ -9,15 +10,12 @@
     box-shadow: none !important;
   }
 }
-@media (max-width: 767px) {
-  #navlink {
-    font-size: 14px;
+@media (max-width: 790px) {
+  #navlink-section {
+    font-size: 15px !important;
     .sign-in-up {
       width: 50%;
       margin: auto;
-    }
-    .nav-bar-pt {
-      padding-top: 10px;
     }
   }
 }
