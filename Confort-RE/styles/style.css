@@ -221,28 +221,60 @@
 }
 
 .counter {
-  position: relative;
+  padding: 120px 0;
+}
+@media (max-width: 568.9px) {
+  .counter {
+    padding: 50px 0;
+  }
 }
 .counter .counter-digits {
-  position: absolute;
-  right: 3%;
-  top: 25%;
-  color: white;
   display: flex;
-}
-.counter .counter-digits .counter-info {
-  padding-right: 2.8rem;
-}
-.counter .counter-digits .counter-info h2 {
-  font-size: 2.8rem;
-}
-.counter .counter-digits .counter-info p {
-  font-size: 1.1rem;
+  justify-content: space-between;
+  padding: 0 30px;
 }
 
 .cross {
   color: #008000;
   margin-left: -0.8rem;
+}
+
+#why-choose-us {
+  position: relative;
+  margin-bottom: 50px;
+}
+#why-choose-us .card {
+  max-width: 400px;
+  position: absolute;
+  bottom: 170px;
+  left: 13%;
+  z-index: 9;
+}
+@media (max-width: 992.9px) {
+  #why-choose-us .card {
+    position: static;
+    max-width: 100%;
+  }
+}
+#why-choose-us .card .box {
+  overflow: hidden;
+}
+#why-choose-us .card .box:hover img {
+  scale: 1.1;
+}
+#why-choose-us .card .box img {
+  height: 250px;
+  aspect-ratio: 1/1;
+  transition: all 0.45s ease-in-out;
+}
+#why-choose-us .link {
+  text-underline-offset: 5px;
+}
+#why-choose-us .link:hover i {
+  transform: translateX(100%);
+}
+#why-choose-us .link i {
+  transition: all 1s ease;
 }
 
 #agentArea .arrows {

@@ -1,25 +1,56 @@
 .counter {
-    position: relative;
-    .counter-digits {
-        position: absolute;
-        right: 3%;
-        top: 25%;
-        color: white;
-        display: flex;
-        .counter-info {
-            padding-right: 2.8rem;
-            h2 {
-                font-size: 2.8rem;
-            }
-            p {
-                font-size: 1.1rem
-            }
-        }
+    padding: 120px 0;
+    @include portrait{
+        padding: 50px 0;
     }
+  .counter-digits {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+ }
 }
 
 //CROSS STYLING ONLY
 .cross {
     color: getColor(color04);
     margin-left: -0.8rem;
+}
+
+#why-choose-us {
+    position: relative;
+    margin-bottom: 50px;
+    .card {
+        max-width: 400px;
+        position: absolute;
+        bottom: 170px;
+        left: 13%;
+        z-index: 9;
+        @include landscape {
+            position: static;
+            max-width: 100%;
+        }
+
+        .box{
+            overflow: hidden;
+            &:hover img{
+                scale: 1.1;
+            }
+            img{
+                height: 250px;
+                aspect-ratio: 1/1;
+                transition: all .45s ease-in-out;
+            }
+        }
+    }
+
+    .link{
+        text-underline-offset: 5px;
+        &:hover i{
+            transform: translateX(100%);
+        }
+        i{
+            transition: all 1s ease;
+
+        }
+    }
 }
