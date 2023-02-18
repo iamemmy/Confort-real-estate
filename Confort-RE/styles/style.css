@@ -109,14 +109,14 @@
   transform: translate(-50%, 0);
   font-size: 1.1rem;
 }
-@media (max-width: 877.9px) {
+@media (max-width: 904.9px) {
   .search-bar-div {
     display: block;
     background-color: inherit;
     border: none;
   }
 }
-@media (max-width: 877.9px) {
+@media (max-width: 904.9px) {
   .search-bar-div .search-bar1 {
     background-color: #ffffff;
     margin-bottom: 0.8rem;
@@ -128,7 +128,7 @@
   border-left: 1px solid #000000;
   padding-left: 1rem;
 }
-@media (max-width: 877.9px) {
+@media (max-width: 904.9px) {
   .search-bar-div .search-bar2 {
     border-left: none;
     background-color: #ffffff;
@@ -146,10 +146,17 @@
 .select-apartment {
   border: none !important;
   background-color: #ffffff !important;
+  border: none;
+  outline: none;
+  padding-right: 2rem;
 }
 .select-apartment:hover {
   background: inherit !important;
-  border: none !important;
+}
+@media (max-width: 904.9px) {
+  .select-apartment {
+    padding-right: 5rem;
+  }
 }
 
 .counter {

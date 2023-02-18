@@ -148,19 +148,17 @@
             <div class="row">
                 <div class="col">
                     <div class="search-bar-div justify-content-center gap-5">
-                      <div class="dropdown search-bar1">
-                        <button class="btn dropdown-toggle select-apartment" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Search for apartment
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">House 1</a></li>
-                          <li><a class="dropdown-item" href="#">House 2</a></li>
-                          <li><a class="dropdown-item" href="#">House 3</a></li>
-                        </ul>
+                      <div class="search-bar1">
+                        <select id="cars" name="cars" class="select-apartment">
+                          <option value="volvo">Lorem, ipsum dolor.</option>
+                          <option value="saab">Lorem, ipsum dolor.</option>
+                          <option value="mercedes">Lorem, ipsum dolor.</option>
+                          <option value="audi">Lorem, ipsum dolor.</option>
+                        </select>
                       </div>
                       <div class="search-bar2">
                         <i class="fas fa-location"></i>
-                        <input type="text" placeholder="Location">
+                        <input type="search" placeholder="Location">
                       </div>
                     </div>
                 </div>
@@ -202,15 +200,15 @@
         <div class="col-12 counter" style="height: 300px; background-color: #000;">
           <div class="counter-digits">
             <div class="counter-info">
-              <h2>15K <span class="cross">+</span></h2>
+              <h2 id="customers">15K <span class="cross">+</span></h2>
               <p>Customers</p>
             </div>
             <div class="counter-info">
-              <h2>15K <span class="cross">+</span></h2>
+              <h2 id="units">15K <span class="cross">+</span></h2>
               <p>Units Ready</p>
             </div>
             <div class="counter-info">
-              <h2>15K <span class="cross">+</span></h2>
+              <h2 id="units2">15K <span class="cross">+</span></h2>
               <p>Units Ready</p>
             </div>
           </div>

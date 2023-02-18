@@ -23,7 +23,7 @@ $colors:(
 }
 
 @mixin landscape2 {
-    @media (max-width: 877.9px) {
+    @media (max-width: 904.9px) {
         @content;
     }
 }
