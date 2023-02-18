@@ -42,6 +42,16 @@
   background-position: center;
   position: fixed;
 }
+@media (max-width: 992.9px) {
+  .carousel-image {
+    height: 52vh;
+  }
+}
+@media (max-width: 568.9px) {
+  .carousel-image {
+    height: 62vh;
+  }
+}
 
 .bg_img1, .bg_img2, .bg_img3, .bg_img5 {
   filter: blur(2px);
@@ -55,6 +65,16 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 992.9px) {
+  .hero-section_text {
+    top: 22%;
+  }
+}
+@media (max-width: 568.9px) {
+  .hero-section_text {
+    top: 26% !important;
+  }
+}
 .hero-section_text h1 {
   font-size: 3.3rem !important;
   color: #ffffff;
@@ -64,11 +84,12 @@
 @media (max-width: 992.9px) {
   .hero-section_text h1 {
     font-size: 2.8rem !important;
+    top: 32%;
   }
 }
 @media (max-width: 568.9px) {
   .hero-section_text h1 {
-    font-size: 2.2rem !important;
+    font-size: 2.1rem !important;
   }
 }
 
@@ -79,6 +100,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 992.9px) {
+  .hero-section_item {
+    top: 30%;
+  }
+}
+@media (max-width: 568.9px) {
+  .hero-section_item {
+    top: 41% !important;
+  }
 }
 .hero-section_item .hero-section_button {
   border: 1px solid #d60e0a;
@@ -111,10 +142,20 @@
 }
 @media (max-width: 904.9px) {
   .search-bar-div {
+    width: 90%;
     display: block;
     background-color: inherit;
     border: none;
+    top: 37%;
   }
+}
+@media (max-width: 568.9px) {
+  .search-bar-div {
+    top: 50%;
+  }
+}
+.search-bar-div .search-bar1 {
+  width: 100%;
 }
 @media (max-width: 904.9px) {
   .search-bar-div .search-bar1 {
@@ -124,9 +165,20 @@
     border-radius: 2px;
   }
 }
+@media (max-width: 992.9px) {
+  .search-bar-div .search-bar1 {
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
 .search-bar-div .search-bar2 {
   border-left: 1px solid #000000;
   padding-left: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: start;
 }
 @media (max-width: 904.9px) {
   .search-bar-div .search-bar2 {
@@ -134,13 +186,21 @@
     background-color: #ffffff;
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
-    padding-left: 4rem;
+    padding-left: 10px;
     border-radius: 2px;
+  }
+}
+@media (max-width: 992.9px) {
+  .search-bar-div .search-bar2 {
+    padding: 10px;
+    border-radius: 10px;
+    flex-direction: row-reverse;
   }
 }
 .search-bar-div .search-bar2 input {
   border: none;
   outline: none;
+  width: 100%;
 }
 
 .select-apartment {
@@ -155,7 +215,8 @@
 }
 @media (max-width: 904.9px) {
   .select-apartment {
-    padding-right: 5rem;
+    padding-right: 0;
+    width: 100%;
   }
 }
 

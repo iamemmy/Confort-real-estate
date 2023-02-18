@@ -26,35 +26,36 @@ $(document).ready(function() {
   });
   
 //COUNTER JS
-let ourCustomer = document.querySelector('#customers');
-let ourUnits = document.querySelector('#units');
-let ourUnitsTwo = document.querySelector('#units2');
 
-let count = 0;
+// Get the why section to check if users have scrolled to it
+const why = document.getElementById('why-choose-us');
 
-// window.addEventListener("onload", maincounter())
-
-function maincounter() {
-   let counterOne = setInterval(() => {
-        if (count == 100) {
-            clearInterval(counterOne)
-        }else{
-            ourCustomer.textContent = `${count++}k`;
+// Create a function to count the values with three params: The element to change, the number to count to and the duration of the counter
+const counter = (element, number, duration)=>{
+    let num = 0;
+    let update = document.getElementById(element)
+    let counter = setInterval(()=>{
+        update.innerText = `${num++}`;
+        if (num === number) {
+            clearInterval(counter)
         }
-    }, 100);
+    }, duration)
+}
 
-    let counterTwo =setInterval(() => {
-        if (count == 30) {
-            clearInterval(counterTwo)
-        }else{
-            ourUnits.textContent = `${count++}k`;
-        }
-    }, 100);
-    let counterThree =setInterval(() => {
-        if (count == 20) {
-            clearInterval(counterThree)
-        }else{
-            ourUnitsTwo.textContent = `${count++}k`;
-        }
-    }, 100);
+// This checks if it has already counted
+let hasxecuted = false;
+
+window.onscroll = function(){
+    // Get the position and size of the element
+    const rect = why.getBoundingClientRect();
+    // Check if the top of the element is in the viewport
+    if (rect.top <= window.innerHeight && rect.bottom >= 0 && !hasxecuted) {
+        // set the has executed to true
+        hasxecuted = true;
+        counter('customers',30,70)
+        counter('units',150,70)
+        counter('units2',200,70)
+
+    } 
+
 }
