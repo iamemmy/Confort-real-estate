@@ -28,6 +28,12 @@ $colors:(
     }
 }
 
+@mixin landscape3 {
+    @media (max-width: 765.9px) {
+        @content;
+    }
+}
+
 @mixin portrait {
     @media (max-width: 568.9px) {
         @content;

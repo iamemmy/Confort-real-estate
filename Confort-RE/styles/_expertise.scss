@@ -22,16 +22,30 @@
         font-size: 24px;
         margin-bottom: 20px;
     }
-    .comfort-text {
-        position: relative;
-        margin-bottom: 250px;
-        p {
-            position: absolute;
-            width: 410px;
-            height: 80px;
-            left: 707px;
-            top: 40px;
-            color: #3E4040;
+    div {
+        div {
+            .house-img {
+                @include landscape{
+                    width: 100%;
+                }
+            }
+        }
+        .comfort-text {
+            position: relative;
+            height: 30vh;
+            padding-inline: 0.5rem;
+            p {
+                position: absolute;
+                width: 50vw;
+                right: 0;
+                top: 40px;
+                color: #3E4040;
+                @include landscape3 {
+                    width: 100%;
+                    right: 0;
+                    left: 0;
+                }
+            }
         }
     }
 }

@@ -268,17 +268,29 @@
   font-size: 24px;
   margin-bottom: 20px;
 }
-#expertise-section .comfort-text {
-  position: relative;
-  margin-bottom: 250px;
+@media (max-width: 992.9px) {
+  #expertise-section div div .house-img {
+    width: 100%;
+  }
 }
-#expertise-section .comfort-text p {
+#expertise-section div .comfort-text {
+  position: relative;
+  height: 30vh;
+  padding-inline: 0.5rem;
+}
+#expertise-section div .comfort-text p {
   position: absolute;
-  width: 410px;
-  height: 80px;
-  left: 707px;
+  width: 50vw;
+  right: 0;
   top: 40px;
   color: #3E4040;
+}
+@media (max-width: 765.9px) {
+  #expertise-section div .comfort-text p {
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
 }
 
 #agentArea .arrows {
@@ -309,6 +321,11 @@
 }
 #agentArea .agent-box:hover img {
   scale: 1.1;
+}
+@media (max-width: 380.9px) {
+  #agentArea .agent-box {
+    height: 50vh;
+  }
 }
 #agentArea .agent-box img {
   min-height: 290px;
