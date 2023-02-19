@@ -1,1 +1,8 @@
+#please do not remove the command below so that it does not push your git ignore file online
+.gitignore
+
+#write the path to your folder or file containing style.css and style.css.map
 assets
+styles/styles.css
+styles/styles.css.map
+.gitignore

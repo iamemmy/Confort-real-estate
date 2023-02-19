@@ -1,5 +1,29 @@
+// * {
+//     outline: 2px solid green;
+// }
+
+//Variable
+$colors:(
+    color01: #ffffff,
+    color02: #d60e0a,
+    color03: #000000,
+    color04: #008000
+
+);
+
+// Function
+@function getColor($key){
+    @return map-get($colors, $key);
+}
+
 @mixin landscape {
     @media (max-width: 992.9px) {
+        @content;
+    }
+}
+
+@mixin landscape2 {
+    @media (max-width: 904.9px) {
         @content;
     }
 }

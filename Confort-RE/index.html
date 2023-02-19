@@ -31,6 +31,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <script src="https://kit.fontawesome.com/fdebeb9bc1.js" crossorigin="anonymous"></script>
     <!-- Ezekiel links -->
     <link
       href="https://fonts.googleapis.com/css?family=Lato"
@@ -51,7 +52,7 @@
 
   <body>
     <!-- NAVBAR AREA -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-5" id="navlink">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark px-3 z-3" id="navlink-section">
       <div class="container-fluid d-flex p-0">
         <a class="navbar-brand mb-0">
           <img
@@ -73,7 +74,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto nav-bar-pt">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a href="#buy" class="nav--item nav-link text-white px-3">Buy</a>
             </li>
@@ -100,13 +101,8 @@
           </ul>
           <ul class="navbar-nav text-white sign-in-up">
             <li class="nav-item">
-              <a href="#sign-in" class="nav-link text-white px-4 btn btn-none"
-                >Sign In
-              </a>
-            </li>
-            <li class="nav-item">
               <a href="#sign-up" class="nav-link text-white btn btn-danger px-4"
-                >Sign Up</a
+                >Dashboard</a
               >
             </li>
           </ul>
@@ -134,12 +130,12 @@
         <div class="hero-section">
             <div class="contaniner-fluid">
                 <div class="row">
-                    <div class="col-sm-7 col-md-12 hero-section_text">
+                    <div class="col-sm-12 col-md-12 hero-section_text">
                         <h1>
                             <b>Discover a place you'll love to live</b>
                         </h1>
                     </div>
-                    <div class="col-sm-5 col-md-12 hero-section_item">
+                    <div class="col-sm-12 col-md-12 hero-section_item">
                         <a href="#" type="button" class="hero-section_button">
                             Get Started
                         </a>
@@ -147,17 +143,23 @@
                 </div>
             </div>
         </div>
+        
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <div class="search-bar_div">
-                        <div class="search-bar">
-                            Search for Type of Apartment
-                        </div>
-                        <div class="search-bar2">
-                            Location
-
-                        </div>
+                    <div class="search-bar-div justify-content-center gap-5">
+                      <div class="search-bar1">
+                        <select id="cars" name="cars" class="select-apartment">
+                          <option value="volvo">Search for Apartment</option>
+                          <option value="saab">Lorem, ipsum dolor.</option>
+                          <option value="mercedes">Lorem, ipsum dolor.</option>
+                          <option value="audi">Lorem, ipsum dolor.</option>
+                        </select>
+                      </div>
+                      <div class="search-bar2">
+                        <i class="fas fa-location"></i>
+                        <input type="search" placeholder="Location">
+                      </div>
                     </div>
                 </div>
             </div>
@@ -166,10 +168,135 @@
 </main>
 
   <!-- WHY CHOOSE US AREA -->
-  <div></div>
+
+  <div id="why-choose-us" class="container-fluid" style="border: 1px solid green;">
+    <div class="row px-5 py-4">
+      <div class="col-12">
+        <h6 class="fw-normal">Why Choose Us  ?</h6>
+      </div>
+      <div class="col-12 d-flex py-5">
+        <div class="col-6 z-3" style="position: relative;">
+          <div class="card px-3 pt-3" style="width: 25rem; position: absolute;top: -20px;">
+            <img src="./images/unsplash_-dcznEJPmsk.png" alt="">
+            <div class="card-body">
+              <h6>Summerhill</h6>
+              <div>
+                <p>68, Charli Boy, Lekki Peninsula,
+                  Lagos State.</p>
+                <button class="details-btn">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <p style="font-size: 20px;" id="testing">
+            Confort is the largest property website that has been helping millions of people to find their dream homes
+            and to help agents sell off homes safely.
+          </p>
+          <p style="text-decoration: underline;">More</p>
+        </div>
+      </div>
+      <div class="col-12 px-0">
+        <div class="col-12 counter" style="height: 300px; background-color: #000;">
+          <div class="counter-digits">
+            <div class="counter-info">
+              <h2> <span id="customers">15</span>K <span class="cross">+</span></h2>
+              <p>Customers</p>
+            </div>
+            <div class="counter-info">
+              <h2><span id="units">15</span>K <span class="cross">+</span></h2>
+              <p>Units Ready</p>
+            </div>
+            <div class="counter-info">
+              <h2><span id="units2">15</span>K <span class="cross">+</span></h2>
+              <p>Units Ready</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- TOUR AREA -->
-  <div></div>
+  <div>
+    <section>
+      <div class="container-fluid" style="border: 1px solid red;">
+        <div class="row px-5 py-4">
+          <div class="col-12">
+            <h6 class="fw-normal">Tour</h6>
+          </div>
+          <div class="col-lg-3">
+            <div class="card px-2 pt-2" style="width: 18rem">
+              <img src="./images/image.png" alt="tour-img" class="card-img-top">
+              <div class="card-body">
+                <h6 class="fw-normal">5 Floor Rosehill</h6>
+                <div class="property-description">
+                  <p>Full Furnish</p>
+                  <p>8 Rooms</p>
+                  <p>1800m</p>
+                </div>
+                <div>
+                  <p>1,200,000.00</p>
+                  <button class="buy-btn">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card px-2 pt-2" style="width: 18rem">
+              <img src="./images/image.png" alt="tour-img" class="card-img-top">
+              <div class="card-body">
+                <h6 class="fw-normal">5 Floor Rosehill</h6>
+                <div class="property-description">
+                  <p>Full Furnish</p>
+                  <p>8 Rooms</p>
+                  <p>1800m</p>
+                </div>
+                <div>
+                  <p>1,200,000.00</p>
+                  <button class="buy-btn">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card px-2 pt-2" style="width: 18rem">
+              <img src="./images/image.png" alt="tour-img" class="card-img-top">
+              <div class="card-body">
+                <h6 class="fw-normal">5 Floor Rosehill</h6>
+                <div class="property-description">
+                  <p>Full Furnish</p>
+                  <p>8 Rooms</p>
+                  <p>1800m</p>
+                </div>
+                <div>
+                  <p>1,200,000.00</p>
+                  <button class="buy-btn">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card px-2 pt-2" style="width: 18rem">
+              <img src="./images/image.png" alt="tour-img" class="card-img-top">
+              <div class="card-body">
+                <h6 class="fw-normal">5 Floor Rosehill</h6>
+                <div class="property-description">
+                  <p>Full Furnish</p>
+                  <p>8 Rooms</p>
+                  <p>1800m</p>
+                </div>
+                <div>
+                  <p>1,200,000.00</p>
+                  <button class="buy-btn">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- EXPERTISE & PASSION AREA -->
   <section id="expertise-section">
@@ -407,9 +534,9 @@
               </section>
             </div>
           </div>
-          <div class="col-md-4 col-lg-3 col-xl-3 mt-3 px-lg-0 px-md-0 px-5">
+          <div class="col-md-4 col-lg-3 col-xl-3 mt-3 px-lg-0 px-md-0 px-5 container subscribe-newsletter">
             <p>Subscribe to our newsletter</p>
-            <div class="form-container-div">
+            <div class="form-container-div ">
               <form class="form-inline d-flex justify-content-center">
                 <div class="form-group w-100">
                   <input
@@ -426,7 +553,7 @@
             </div>
           </div>
         </div>
-        <section class="pt-5 text-center">
+        <section class="pt-5 text-center copyright">
           Copyright by Confort Real Estate. All rights reserved. 2023
         </section>
       </section>
