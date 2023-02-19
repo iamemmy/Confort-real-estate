@@ -1,0 +1,37 @@
+#expertise-section {
+    .head {
+        font-family: 'Lato';
+        color: #1A1A1A;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        padding-bottom: 10px;
+    }
+    .head-text, .services, .comfort-text {
+        font-family: 'Inter';
+    }
+    .head-text {   
+        color:#3E4040;
+    }
+    .services {
+        margin-bottom: 80px;
+    }
+    .services-head {
+        color: #3E4040;
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .comfort-text {
+        position: relative;
+        margin-bottom: 250px;
+        p {
+            position: absolute;
+            width: 410px;
+            height: 80px;
+            left: 707px;
+            top: 40px;
+            color: #3E4040;
+        }
+    }
+}
