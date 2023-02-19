@@ -2,6 +2,9 @@
   font-family: "Inter";
   font-size: 16px;
   font-weight: 400;
+  .copyright {
+    font-size: 14px;
+  }
   .text-simple {
     text-align: justify;
   }
@@ -41,13 +44,32 @@
 }
 @media (max-width: 767px) {
   #footer {
-    font-size: 14px;
+    font-size: 12px;
     .slogan-center {
       text-align: center;
     }
     .form-container-div {
       min-width: fit-content;
       max-width: fit-content;
+      margin: auto;
+    }
+    .subscribe-newsletter {
+      text-align: center;
+      margin: auto;
+    }
+    .form-control {
+      font-size: 12px;
+    }
+    .copyright {
+      font-size: 10px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #footer {
+    font-size: 14px;
+    .copyright {
+      font-size: 12px;
     }
   }
 }
