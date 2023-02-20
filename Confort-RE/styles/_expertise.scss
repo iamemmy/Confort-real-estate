@@ -1,8 +1,8 @@
 #expertise-section {
     .head {
         font-family: 'Lato';
-        color: #1A1A1A;
-        font-weight: 700;
+        color: getColor(color03);
+        font-weight: 500;
         font-size: 36px;
         line-height: 48px;
         padding-bottom: 10px;
@@ -11,14 +11,14 @@
         font-family: 'Inter';
     }
     .head-text {   
-        color:#3E4040;
+        color: getColor(color05);
     }
     .services {
         margin-bottom: 80px;
     }
     .services-head {
-        color: #3E4040;
-        font-weight: 600;
+        color: getColor(color05);
+        font-weight: 400;
         font-size: 24px;
         margin-bottom: 20px;
     }
@@ -39,7 +39,7 @@
                 width: 50vw;
                 right: 0;
                 top: 40px;
-                color: #3E4040;
+                color: getColor(color05);
                 @include landscape3 {
                     width: 100%;
                     right: 0;
