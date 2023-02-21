@@ -315,12 +315,12 @@
   font-family: "Inter";
 }
 #expertise-section .head-text {
-  color: #3E4040;
   font-size: 14px;
 }
 #expertise-section .prop-img {
   margin-top: 10px;
   margin-bottom: 20px;
+  color: #3e4040;
 }
 #expertise-section .services {
   margin-bottom: 40px;
@@ -336,18 +336,26 @@
   margin-bottom: 0px;
   font-size: 14px;
 }
-#expertise-section .comfort-text {
+#expertise-section .confort-text {
   position: relative;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
+  padding: 20px 10px;
+  width: 100%;
+  height: 15vh;
 }
-#expertise-section div .comfort-text p {
+#expertise-section .confort-text p {
   position: absolute;
-  width: 308px;
-  height: 80px;
-  left: 0px;
-  top: 10px;
+  width: 50%;
+  right: 0;
   color: #3E4040;
-  font-size: 10px;
+  font-size: 16px;
+}
+@media (max-width: 765.9px) {
+  #expertise-section .confort-text p {
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
 }
 
 @media only screen and (min-width: 769px) {
