@@ -300,6 +300,9 @@
   margin-left: -0.8rem;
 }
 
+#expertise-section {
+  padding: 20px;
+}
 #expertise-section .head {
   font-family: "Lato";
   color: #000000;
@@ -312,42 +315,73 @@
   font-family: "Inter";
 }
 #expertise-section .head-text {
-  color: #3e4040;
+  color: #3E4040;
+  font-size: 14px;
 }
-#expertise-section .services {
-  margin-bottom: 80px;
-}
-#expertise-section .services-head {
-  color: #3e4040;
-  font-weight: 400;
-  font-size: 24px;
+#expertise-section .prop-img {
+  margin-top: 10px;
   margin-bottom: 20px;
 }
-@media (max-width: 992.9px) {
-  #expertise-section div div .house-img {
-    width: 100%;
-  }
+#expertise-section .services {
+  margin-bottom: 40px;
 }
-#expertise-section div .comfort-text {
+#expertise-section .services-head {
+  color: #3E4040;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#expertise-section .services-text {
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+#expertise-section .comfort-text {
   position: relative;
-  height: 30vh;
-  padding-inline: 0.5rem;
+  margin-bottom: 90px;
 }
 #expertise-section div .comfort-text p {
   position: absolute;
-  width: 50vw;
-  right: 0;
-  top: 40px;
-  color: #3e4040;
-}
-@media (max-width: 765.9px) {
-  #expertise-section div .comfort-text p {
-    width: 100%;
-    right: 0;
-    left: 0;
-  }
+  width: 308px;
+  height: 80px;
+  left: 0px;
+  top: 10px;
+  color: #3E4040;
+  font-size: 10px;
 }
 
+@media only screen and (min-width: 769px) {
+  #expertise-section {
+    padding: 0px;
+  }
+  #expertise-section .head {
+    font-size: 36px;
+    line-height: 48px;
+    padding-bottom: 10px;
+  }
+  #expertise-section .head-text {
+    width: 75%;
+  }
+  #expertise-section .prop-img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #expertise-section .services {
+    margin-bottom: 80px;
+  }
+  #expertise-section .services-head {
+    margin-bottom: 20px;
+  }
+  #expertise-section .comfort-text {
+    margin-bottom: 250px;
+  }
+  #expertise-section .comfort-text p {
+    width: 410px;
+    left: 707px;
+    top: 40px;
+    font-size: 16px;
+  }
+}
 #agentArea .arrows {
   font-size: 20px;
   border: 1px dotted #808080;
