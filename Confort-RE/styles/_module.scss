@@ -7,7 +7,8 @@ $colors:(
     color01: #ffffff,
     color02: #d60e0a,
     color03: #000000,
-    color04: #008000
+    color04: #008000,
+    color05: #3e4040
 
 );
 
@@ -24,6 +25,12 @@ $colors:(
 
 @mixin landscape2 {
     @media (max-width: 904.9px) {
+        @content;
+    }
+}
+
+@mixin landscape3 {
+    @media (max-width: 765.9px) {
         @content;
     }
 }

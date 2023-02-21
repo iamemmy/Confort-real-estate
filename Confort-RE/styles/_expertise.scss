@@ -2,21 +2,22 @@
     padding: 20px;
     .head {
         font-family: 'Lato';
-        color: #1A1A1A;
-        font-weight: 700;
-        line-height: 29px;
+        color: getColor(color03);
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 48px;
         padding-bottom: 10px;
     }
     .head-text, .services, .comfort-text {
         font-family: 'Inter';
     }
     .head-text {   
-        color:#3E4040;
         font-size: 14px;
     }
     .prop-img {
         margin-top: 10px;
         margin-bottom: 20px;
+        color: getColor(color05);
     }
     .services {
         margin-bottom: 40px;

@@ -27,6 +27,9 @@
     &:hover img {
       scale: 1.1;
     }
+    @include medium {
+      height: 50vh;
+    }
 
     img {
       min-height: 290px;
