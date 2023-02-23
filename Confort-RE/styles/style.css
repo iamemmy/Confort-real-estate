@@ -3,8 +3,14 @@
   font-size: 16px;
   font-weight: 400;
 }
+#navlink-section .dropdown-item {
+  font-size: 14px;
+}
+#navlink-section .dropdown-item:hover {
+  background-color: #d60e0a !important;
+}
 #navlink-section .nav--item:hover {
-  color: red !important;
+  color: #d60e0a !important;
 }
 #navlink-section .navbar--toggler:focus {
   box-shadow: none !important;
@@ -12,11 +18,21 @@
 
 @media (max-width: 790px) {
   #navlink-section {
-    font-size: 15px !important;
+    font-size: 14px !important;
   }
   #navlink-section .sign-in-up {
     width: 50%;
     margin: auto;
+  }
+  #navlink-section .dropdown-menu {
+    width: 50%;
+    margin: auto;
+  }
+  #navlink-section .dropdown-item {
+    font-size: 13px;
+  }
+  #navlink-section .dropdown-item:hover {
+    background-color: transparent !important;
   }
 }
 .bg-wrapper .bg_img1 {
