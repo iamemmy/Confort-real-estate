@@ -1,0 +1,51 @@
+#expertise-section {
+    .head {
+        font-family: 'Lato';
+        color: #1A1A1A;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        padding-bottom: 10px;
+    }
+    .head-text, .services, .comfort-text {
+        font-family: 'Inter';
+    }
+    .head-text {   
+        color:#3E4040;
+    }
+    .services {
+        margin-bottom: 80px;
+    }
+    .services-head {
+        color: #3E4040;
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    div {
+        div {
+            .house-img {
+                @include landscape{
+                    width: 100%;
+                }
+            }
+        }
+        .comfort-text {
+            position: relative;
+            height: 30vh;
+            padding-inline: 0.5rem;
+            p {
+                position: absolute;
+                width: 50vw;
+                right: 0;
+                top: 40px;
+                color: #3E4040;
+                @include landscape3 {
+                    width: 100%;
+                    right: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
