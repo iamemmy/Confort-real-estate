@@ -1,4 +1,5 @@
 #expertise-section {
+    padding: 20px;
     .head {
         font-family: 'Lato';
         color: getColor(color03);
@@ -11,40 +12,76 @@
         font-family: 'Inter';
     }
     .head-text {   
+        font-size: 14px;
+    }
+    .prop-img {
+        margin-top: 10px;
+        margin-bottom: 20px;
         color: getColor(color05);
     }
     .services {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
     .services-head {
-        color: getColor(color05);
-        font-weight: 400;
-        font-size: 24px;
+        color: #3E4040;
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 20px;
         margin-bottom: 20px;
     }
-    div {
-        div {
-            .house-img {
-                @include landscape{
-                    width: 100%;
-                }
+    .services-text {
+        margin-bottom: 0px;
+        font-size: 14px;
+    }
+    .confort-text {
+        position: relative;
+        margin-bottom: 50px;
+        padding: 20px 10px;
+        width: 100%;
+        height: 15vh;
+        p {
+            position: absolute;
+            width: 50%;
+            right: 0;
+            color: #3E4040;
+            font-size: 16px;
+            @include landscape3 {
+                width: 100%;
+                right: 0;
+                left: 0;
             }
         }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #expertise-section {
+        padding: 0px;
+        .head {
+            font-size: 36px;
+            line-height: 48px;
+            padding-bottom: 10px;
+        }
+        .head-text {
+            width: 75%;
+        }
+        .prop-img {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        .services {
+            margin-bottom: 80px;
+        }
+        .services-head {  
+            margin-bottom: 20px;
+        }
         .comfort-text {
-            position: relative;
-            height: 30vh;
-            padding-inline: 0.5rem;
+            margin-bottom: 250px;
             p {
-                position: absolute;
-                width: 50vw;
-                right: 0;
+                width: 410px;
+                left: 707px;
                 top: 40px;
-                color: getColor(color05);
-                @include landscape3 {
-                    width: 100%;
-                    right: 0;
-                    left: 0;
-                }
+                font-size: 16px;
             }
         }
     }
