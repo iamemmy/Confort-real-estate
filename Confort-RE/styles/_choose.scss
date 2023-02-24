@@ -1,25 +1,259 @@
-.counter {
-    position: relative;
-    .counter-digits {
-        position: absolute;
-        right: 3%;
-        top: 25%;
-        color: white;
+@use "module";
+
+#why-choose-us {
+  max-width: 1300px;
+  margin: 0 auto;
+  div {
+    div {
+      .choose-lead-text {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        @include landscape3 {
+          text-align: center;
+          margin-bottom: 2rem;
+          font-size: 1.2rem;
+        }
+        @include landscape4 {
+          text-align: center;
+          margin-bottom: 2rem;
+          font-size: 1.2rem;
+        }
+        @include portrait {
+          text-align: center;
+          margin-bottom: 2rem;
+          font-size: 1.2rem;
+        }
+        @include medium {
+          text-align: center;
+          margin-bottom: 2rem;
+          font-size: 1.2rem;
+        }
+        @include small {
+          text-align: center;
+          margin-bottom: 2rem;
+          font-size: 1.2rem;
+        }
+      }
+      .choose-card-sec {
+        width: 100%;
         display: flex;
-        .counter-info {
+        flex-direction: row;
+        @include landscape3 {
+          flex-direction: column-reverse;
+        }
+        @include landscape4 {
+          flex-direction: column-reverse;
+        }
+        @include portrait {
+          flex-direction: column-reverse;
+        }
+        @include medium {
+          flex-direction: column-reverse;
+        }
+        @include small {
+          flex-direction: column-reverse;
+        }
+        .choose-card {
+          position: relative;
+          .card-wrapper {
+            width: 23rem;
+            position: absolute;
+            top: -30px;
+            @include landscape {
+              width: 22rem;
+            }
+            @include landscape3 {
+              position: unset;
+              width: 20rem;
+              margin: 0 auto 30px auto;
+            }
+            @include landscape4 {
+              position: unset;
+              width: 20rem;
+              margin: 0 auto 30px auto;
+            }
+            @include portrait {
+              position: unset;
+              width: 20rem;
+              margin: 0 auto 30px auto;
+            }
+            @include medium {
+              position: unset;
+              width: 100%;
+              margin-bottom: 30px;
+            }
+            @include small {
+              position: unset;
+              width: 100%;
+              margin-bottom: 30px;
+            }
+            .card-body {
+              .choose-us-location {
+                display: flex;
+                align-items: center;
+                @include landscape4 {
+                  flex-direction: column;
+                }
+                .details-btn {
+                  background-color: getColor(color02);
+                  color: getColor(color01);
+                  padding: 5px 15px;
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .choose-us-details {
+        #choose-us-text {
+          font-size: 1.1rem;
+          @include landscape3 {
+            text-align: center;
+            margin: 0 3rem;
+          }
+          @include landscape4 {
+            text-align: center;
+            margin: 0 3rem;
+          }
+          @include portrait {
+            text-align: center;
+            margin: 0;
+          }
+          @include medium {
+            text-align: center;
+            margin: 0;
+          }
+          @include small {
+            text-align: center;
+            margin: 0;
+          }
+        }
+        .more-text {
+          color: getColor(color02);
+          text-decoration: underline;
+          margin-top: 10px;
+          @include landscape3 {
+            text-align: center;
+          }
+          @include landscape4 {
+            text-align: center;
+          }
+          @include portrait {
+            text-align: center;
+          }
+          @include medium {
+            text-align: center;
+          }
+          @include small {
+            text-align: center;
+          }
+        }
+      }
+    }
+    div {
+      .counter {
+        position: relative;
+        height: 300px;
+        background-color: #000;
+        @include landscape3 {
+          height: 190px;
+        }
+        @include landscape4 {
+          height: 190px;
+        }
+        @include portrait {
+          height: 190px;
+        }
+        @include medium {
+          height: 190px;
+        }
+        @include small {
+          height: 190px;
+        }
+        .counter-digits {
+          position: absolute;
+          right: 3%;
+          top: 25%;
+          color: white;
+          display: flex;
+          @include landscape3 {
+            justify-content: space-evenly;
+            align-items: center;
+            position: unset;
+            padding-top: 3.3rem;
+          }
+          @include landscape4 {
+            justify-content: space-evenly;
+            align-items: center;
+            position: unset;
+            padding-top: 3.3rem;
+          }
+          @include portrait {
+            justify-content: space-evenly;
+            align-items: center;
+            position: unset;
+            padding-top: 3.3rem;
+          }
+          @include medium {
+            justify-content: space-evenly;
+            align-items: center;
+            position: unset;
+            padding-top: 3.3rem;
+          }
+          @include small {
+            justify-content: space-evenly;
+            align-items: center;
+            position: unset;
+            padding-top: 3.3rem;
+          }
+          .counter-info {
             padding-right: 2.8rem;
+            @include landscape2 {
+              padding-right: 2rem;
+            }
+            @include landscape3 {
+              padding-right: 0;
+            }
+            @include landscape4 {
+              padding-right: 0;
+            }
+            @include portrait {
+              padding-right: 0;
+            }
+            @include medium {
+              padding-right: 0;
+            }
+            @include small {
+              padding-right: 0;
+            }
             h2 {
-                font-size: 2.8rem;
+              font-size: 2.8rem;
+              @include landscape {
+                font-size: 2.3rem;
+              }
+              @include landscape2 {
+                font-size: 2rem;
+              }
+              @include small {
+                font-size: 1.7rem;
+              }
             }
             p {
-                font-size: 1.1rem
+              font-size: 1.1rem;
+              @include landscape {
+                font-size: 0.8rem;
+              }
             }
+          }
         }
+      }
     }
+  }
 }
 
 //CROSS STYLING ONLY
 .cross {
-    color: getColor(color04);
-    margin-left: -0.8rem;
+  color: getColor(color04);
+  margin-left: -0.8rem;
 }
