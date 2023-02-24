@@ -646,6 +646,123 @@
   margin-left: -0.8rem;
 }
 
+#tour-section {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+#tour-section div div div .tour-lead-text {
+  font-size: 1.5rem;
+}
+@media (max-width: 767.9px) {
+  #tour-section div div div .tour-lead-text {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 568.9px) {
+  #tour-section div div div .tour-lead-text {
+    padding-left: 10px;
+  }
+}
+#tour-section div div div .navigation .prev {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  margin-right: 9px;
+}
+#tour-section div div div .navigation .prev .fa-solid {
+  margin-left: 8px;
+  margin-top: 7px;
+}
+#tour-section div div div .navigation .next {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  margin-left: 9px;
+}
+#tour-section div div div .navigation .next .fa-solid {
+  margin-left: 8px;
+  margin-top: 7px;
+}
+
+div div .tour-card {
+  width: 18rem;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 992.9px) {
+  div div .tour-card {
+    width: 90%;
+  }
+}
+@media (max-width: 904.9px) {
+  div div .tour-card {
+    width: 90%;
+  }
+}
+@media (max-width: 820.9px) {
+  div div .tour-card {
+    width: 90%;
+  }
+}
+@media (max-width: 767.9px) {
+  div div .tour-card {
+    width: 16rem;
+  }
+}
+@media (max-width: 568.9px) {
+  div div .tour-card {
+    width: 19rem;
+  }
+}
+@media (max-width: 380.9px) {
+  div div .tour-card {
+    width: 100%;
+  }
+}
+@media (max-width: 350.9px) {
+  div div .tour-card {
+    width: 100%;
+  }
+}
+div div .tour-card .card-body .property-location {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+div div .tour-card .card-body .property-description {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+div div .tour-card .card-body .property-description p {
+  font-size: 0.9rem;
+}
+div div .tour-card .card-body .property-description p img {
+  width: 15px;
+  height: 15px;
+}
+div div .tour-card .card-body .property-price p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+@media (max-width: 820.9px) {
+  div div .tour-card .card-body .property-price p {
+    font-size: 0.9rem;
+  }
+}
+div div .tour-card .card-body .property-price .buy-btn {
+  border: none;
+  padding: 9px 13px;
+  border-radius: 5px;
+  background-color: #d60e0a;
+  color: #ffffff;
+}
+
 #expertise-section {
   padding: 20px;
 }
