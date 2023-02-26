@@ -1,0 +1,118 @@
+#sidebar {
+  background-color: #000000;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: margin-left 0.45s linear;
+}
+@media (max-width: 765.9px) {
+  #sidebar {
+    margin-left: -270px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 99999 !important;
+  }
+}
+#sidebar.show {
+  margin-left: -270px;
+}
+@media (max-width: 765.9px) {
+  #sidebar.show {
+    margin-left: 0;
+  }
+}
+#sidebar .brand {
+  text-decoration: none;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 10px;
+}
+#sidebar .brand img {
+  width: 100px;
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+#sidebar .sidebar-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#sidebar .sidebar-items a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.45s ease;
+}
+#sidebar .sidebar-items a.active {
+  box-shadow: 1px 1px 0 0 #ffffff;
+  padding-bottom: 0.5rem;
+  padding-right: 1.5rem;
+  border-bottom-right-radius: 10px;
+}
+#sidebar .sidebar-items a:hover {
+  padding-right: 10px;
+  padding-bottom: 5px;
+  box-shadow: 1px 1px 0 0 #ffffff;
+  border-bottom-right-radius: 10px;
+}
+#sidebar #logout {
+  margin-top: 10rem;
+  margin-bottom: 13rem;
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 2rem;
+}
+
+main.content #top-dropdown > a {
+  text-decoration: none;
+}
+main.content #top-dropdown > a img {
+  width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main.content #top-dropdown .dropdown-menu {
+  background-color: #000000;
+  transform: translate3d(0px, 55.5px, 0px) !important;
+}
+main.content #top-dropdown .dropdown-menu a {
+  color: #ffffff;
+}
+main.content #top-dropdown .dropdown-menu a:hover {
+  color: #000000;
+}
+
+#main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#main-container main.content {
+  width: 100%;
+  align-self: flex-start;
+}
+#main-container main.content .menu-cards {
+  text-decoration: none;
+  color: #000000;
+}
+#main-container main.content .menu-cards:hover > .card {
+  background-color: #ffffff !important;
+  transition: 0.3s ease;
+}
+#main-container main.content .menu-cards:hover > .card i {
+  color: #000000 !important;
+  transition: 0.3s ease;
+}
+#main-container main.content .menu-cards:hover > .card div:last-child {
+  transition: 0.3s ease;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}/*# sourceMappingURL=main.css.map */

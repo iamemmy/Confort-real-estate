@@ -239,6 +239,44 @@
   margin-left: -0.8rem;
 }
 
+#why-choose-us {
+  position: relative;
+  margin-bottom: 50px;
+}
+#why-choose-us .card {
+  max-width: 400px;
+  position: absolute;
+  bottom: 170px;
+  left: 13%;
+  z-index: 9;
+}
+@media (max-width: 992.9px) {
+  #why-choose-us .card {
+    position: static;
+    max-width: 100%;
+  }
+}
+#why-choose-us .card .box {
+  overflow: hidden;
+}
+#why-choose-us .card .box:hover img {
+  scale: 1.1;
+}
+#why-choose-us .card .box img {
+  height: 250px;
+  aspect-ratio: 1/1;
+  transition: all 0.45s ease-in-out;
+}
+#why-choose-us .link {
+  text-underline-offset: 5px;
+}
+#why-choose-us .link:hover i {
+  transform: translateX(100%);
+}
+#why-choose-us .link i {
+  transition: all 1s ease;
+}
+
 #expertise-section .head {
   font-family: "Lato";
   color: #1A1A1A;
@@ -439,4 +477,30 @@
   #footer .copyright {
     font-size: 12px;
   }
+}
+#main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#main-container main.content {
+  width: 100%;
+  align-self: flex-start;
+}
+#main-container main.content .menu-cards {
+  text-decoration: none;
+  color: #000000;
+}
+#main-container main.content .menu-cards:hover > .card {
+  background-color: #ffffff !important;
+  transition: 0.3s ease;
+}
+#main-container main.content .menu-cards:hover > .card i {
+  color: #000000 !important;
+  transition: 0.3s ease;
+}
+#main-container main.content .menu-cards:hover > .card div:last-child {
+  transition: 0.3s ease;
+  background-color: #000000 !important;
+  color: #ffffff !important;
 }/*# sourceMappingURL=style.css.map */
