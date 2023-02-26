@@ -1,0 +1,28 @@
+main{
+    &.content{
+
+        #top-dropdown{
+            & > a{
+                text-decoration: none;
+                img{
+                    width: 50px;
+                    aspect-ratio: 1/1;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+            .dropdown-menu{
+                background-color: getColor(color03);
+                transform: translate3d(0px, 55.5px, 0px) !important;
+                a{
+                    color: getColor(color01);
+                    &:hover{
+                        color: getColor(color03);
+                    }
+                }
+            }
+
+        }
+
+    }
+}
