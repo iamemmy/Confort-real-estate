@@ -7,7 +7,7 @@
   padding: 1rem;
   transition: margin-left 0.45s linear;
 }
-@media (max-width: 765.9px) {
+@media (max-width: 820.9px) {
   #sidebar {
     margin-left: -270px;
     position: fixed;
@@ -20,7 +20,7 @@
 #sidebar.show {
   margin-left: -270px;
 }
-@media (max-width: 765.9px) {
+@media (max-width: 820.9px) {
   #sidebar.show {
     margin-left: 0;
   }
@@ -115,4 +115,62 @@ main.content #top-dropdown .dropdown-menu a:hover {
   transition: 0.3s ease;
   background-color: #000000 !important;
   color: #ffffff !important;
+}
+
+#listproperty {
+  font-family: "Lato", sans-serif;
+}
+#listproperty .head-text {
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 400;
+}
+#listproperty .head-text span {
+  color: #EA1E23;
+}
+#listproperty .card-body {
+  position: relative;
+}
+#listproperty .card-body .title, #listproperty .card-body .upload-title {
+  font-weight: bold;
+}
+#listproperty .card-body .upload-title {
+  margin-bottom: 0;
+}
+#listproperty .card-body .form-group .custom-file .file-format {
+  margin-top: 0;
+  color: #EA1E23;
+}
+#listproperty .card-body .form-group .custom-file .file-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#listproperty .card-body .form-group .custom-file input[type=file] {
+  display: none;
+}
+#listproperty .card-body .form-group .custom-file .file-upload {
+  margin: 0.1rem 0.5rem 1rem 0.5rem;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+#listproperty .card-body .form-group .custom-file .upload-info {
+  font-size: 14px;
+  font-weight: 400;
+}
+#listproperty .card-body .buttons .button {
+  position: absolute;
+  bottom: 20px;
+}
+#listproperty .card-body .buttons .button .back-btn {
+  background: #ffffff;
+  font-weight: bold;
+  width: 150px;
+}
+#listproperty .card-body .buttons .button .upload-btn {
+  background: #EA1E23;
+  color: #ffffff;
+  width: 150px;
 }/*# sourceMappingURL=main.css.map */
