@@ -743,7 +743,10 @@
     height: 230px;
   }
 }
-@media (max-width: 993px) {
+@media (max-width: 991px) {
+  #tour-section .tour-item .tour-item-icon {
+    padding-right: 0.25rem;
+  }
   #tour-section .tour-item .tour-item-title {
     font-size: 14px;
   }
