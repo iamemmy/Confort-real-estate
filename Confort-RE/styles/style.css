@@ -666,7 +666,6 @@
   border-color: red;
 }
 #tour-section .div-container {
-  width: -moz-fit-content;
   width: fit-content;
 }
 #tour-section .arrows {
@@ -706,7 +705,6 @@
 }
 #tour-section .tour-item .tour-item-image {
   height: 315px;
-  width: -moz-fit-content;
   width: fit-content;
   padding-bottom: 1rem;
 }
@@ -881,9 +879,7 @@
   border-radius: 50%;
   padding: 20px 22px;
   transition: background-color 1s ease;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 #agentArea .arrows:active {
@@ -969,9 +965,6 @@
   background-color: #383838 !important;
   border: none;
 }
-#footer .form-container-div .form-control::-moz-placeholder {
-  color: white;
-}
 #footer .form-container-div .form-control::placeholder {
   color: white;
 }
@@ -1003,9 +996,7 @@
     text-align: center;
   }
   #footer .form-container-div {
-    min-width: -moz-fit-content;
     min-width: fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin: auto;
   }
@@ -1028,7 +1019,70 @@
     font-size: 12px;
   }
 }
-body {
-  background-color: green;
-  color: white;
+#property_desc_sec {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+#property_desc_sec div div div div .property_desc_img_one img {
+  margin-top: 2rem;
+}
+#property_desc_sec div div div div .property_desc_img_two p {
+  margin-bottom: 0;
+}
+#property_desc_sec div div div div .property_desc_img_two img {
+  width: 95%;
+  margin-left: 2rem;
+}
+#property_desc_sec div div div div .property_desc_img_two .property_details .property_details_text {
+  font-size: 1.3rem;
+  margin: 1rem 0 1.5rem 5rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+#property_desc_sec div div div div .property_desc_img_two .property_details .property_details_line {
+  width: 300px;
+  height: 1px;
+  background-color: #000;
+  margin-left: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+#property_desc_sec div div div div .property_desc_img_two .property_type-text,
+#property_desc_sec div div div div .property_desc_img_two .propery_status-text {
+  font-size: 1rem;
+  margin-left: 5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+#property_desc_sec div div div div .property_desc_img_two .property_type,
+#property_desc_sec div div div div .property_desc_img_two .propery_status {
+  font-size: 1.3rem;
+  margin: 0 0 1rem 5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+#property_desc_sec div div div {
+  position: relative;
+}
+#property_desc_sec div div div .property_name {
+  font-size: 1.3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+}
+#property_desc_sec div div div .property_desc_text {
+  line-height: 1.8rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+#property_desc_sec div div div .show_more_text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+#property_desc_sec div div div .show_more_text::after {
+  content: " ";
+  position: absolute;
+  width: 95px;
+  height: 2px;
+  background-color: #d60e0a;
+  left: 3rem;
+  bottom: 0.9rem;
 }/*# sourceMappingURL=style.css.map */
