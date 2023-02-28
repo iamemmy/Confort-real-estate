@@ -315,12 +315,12 @@
   font-family: "Inter";
 }
 #expertise-section .head-text {
-  color: #3E4040;
   font-size: 14px;
 }
 #expertise-section .prop-img {
   margin-top: 10px;
   margin-bottom: 20px;
+  color: #3e4040;
 }
 #expertise-section .services {
   margin-bottom: 40px;
@@ -340,7 +340,7 @@
   position: relative;
   margin-bottom: 90px;
 }
-#expertise-section div .comfort-text p {
+#expertise-section .comfort-text p {
   position: absolute;
   width: 308px;
   height: 80px;
