@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Property Page 2</title>
+    <link rel="shortcut icon" href="images/confort-logo.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/fdebeb9bc1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Link to style.css -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body id="app">
+    <div id="main-container">
+        <!-- Sidebar Start -->
+        <aside class="sidebar" id="sidebar">
+            <div>
+                <a href="#" class="brand ">
+                    <img src="images/confort-logo.png" alt="logo">
+                </a>
+
+                <ul class="sidebar-items">
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fa fa-columns"></i> &nbsp; Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-clipboard-list"></i> &nbsp; List a property
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-clipboard-check"></i> &nbsp; Manage Listings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-envelope-open-text"></i> &nbsp; Manage Request
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-user-circle"></i> &nbsp; Manage Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-heart"></i> &nbsp; Favourite
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" id="logout">
+                <i class="fa fa-power-off"></i> &nbsp; Logout
+            </a>
+        </aside>
+        <!-- Sidebar Ends -->
+
+        <main class="content">
+            <!-- Top Navbar Starts-->
+            <nav class="d-flex justify-content-between shadow-sm  flex-row-reverse flex-lg-row px-3 py-1">
+                <button class="btn border-0" id="side-toggler">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+                <ul class="nav-items d-flex flex-row-reverse flex-lg-row gap-3 align-items-center">
+                    <a href="" class="btn btn-sm btn-dark">
+                        List New Property
+                    </a>
+
+                    <div class="dropdown" id="top-dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="images/Ellipse 3 (1).png" alt="avatar">
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-user-circle"></i> &nbsp; Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="far fa-heart"></i> &nbsp; Favourites
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-power-off"></i> &nbsp; Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
+            <!-- Top Navbar Ends -->
+
+            <!-- Main Screen Content -->
+            <section id="listproperty">
+                <div class="container-fluid py-4">
+                    <!-- Add Contents Here -->
+                    <p class="head-text">List <span>Property</span></p>
+                    <div class="card vh-100">
+                        <div class="card-body px-4">
+                            <div class="mb-3">
+                                <label for="title" class="form-label title">Property Title</label>
+                                <input type="text" class="form-control" id="title" placeholder="Enter Title">
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-file">
+                                    <p class="upload-title">Upload photo<p>
+                                    <span class="file-format">Acceptable formats are jpg, png and jpeg </span>
+                                
+                                    <form>
+                                        <input type="file" class="custom-file-input cursor-pointer" id="img-upload" name="img-upload" accept="image/jpg, image/png, image/jpeg"/>
+                                        <label for="img-upload" class="custom-file-label cursor-pointer file-upload">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </label>
+                                    </form>
+                                    <p class="upload-info">You can upload a minimum of 5 images
+                                        <br>
+                                        <span>Uploads should not be more than 5mb</span>
+                                    </p>
+                                </div>
+                              </div>
+                              <div class="d-grid gap-2 d-md-flex justify-content-md-end buttons">
+                                <div class="button">
+                                    <button class="btn border back-btn me-md-2" type="button">Back</button>
+                                    <button class="btn upload-btn" type="button">Upload</button>
+                                </div>   
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
