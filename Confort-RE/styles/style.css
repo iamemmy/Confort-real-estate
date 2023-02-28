@@ -1019,11 +1019,6 @@
     font-size: 12px;
   }
 }
-body {
-  background-color: green;
-  color: white;
-}
-
 #property_desc_sec {
   max-width: 1300px;
   margin: 0 auto;
