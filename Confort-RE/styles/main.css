@@ -241,6 +241,7 @@ main.content #top-dropdown .dropdown-menu a:hover {
 #list-property-1 div .row-wrapper .form-wrapper form {
   border: 1px solid gainsboro;
   padding: 1.5rem;
+  width: 80vw;
 }
 
 #list-property-1 div .row-wrapper .form-wrapper form .select-wrapper-1 {
