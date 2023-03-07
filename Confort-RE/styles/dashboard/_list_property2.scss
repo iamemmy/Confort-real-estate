@@ -8,6 +8,12 @@
             color: getColor(color06);
         }
     }
+    .card {
+        height: 100vh;
+        @include landscape4 {
+            height: 400px;
+        }
+    }
     .card-body {
         position: relative;
         .title, .upload-title {
@@ -44,6 +50,10 @@
             }
         }
         .buttons {
+            @include landscape4 {
+                display: flex;
+                justify-content: center;
+            }
             .button {
                 position: absolute;
                 bottom: 20px;
@@ -51,14 +61,26 @@
                     background: getColor(color01);
                     font-weight: bold;
                     width: 150px;
+                    @include landscape4 {
+                        width: 100px;
+                        border-color: getColor(color06);
+                    }
                 }
                 .upload-btn {
                     background: getColor(color06);
                     color: getColor(color01);
                     width: 150px;
+                    @include landscape4 {
+                        width: 100px;
+                    }
                 }
-            }
-            
+            }  
         }  
-    }   
+    }  
 }
+.hideFooter {
+    display: none;
+    @include landscape4 {
+        display: block;
+    }
+} 
