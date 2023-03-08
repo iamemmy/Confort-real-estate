@@ -172,7 +172,14 @@ main.content #top-dropdown .dropdown-menu a:hover {
 #listproperty .head-text span {
   color: #EA1E23;
 }
-
+#listproperty .card {
+  height: 100vh;
+}
+@media (max-width: 767.9px) {
+  #listproperty .card {
+    height: 400px;
+  }
+}
 #listproperty .card-body {
   position: relative;
 }
@@ -212,7 +219,12 @@ main.content #top-dropdown .dropdown-menu a:hover {
   font-size: 14px;
   font-weight: 400;
 }
-
+@media (max-width: 767.9px) {
+  #listproperty .card-body .buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
 #listproperty .card-body .buttons .button {
   position: absolute;
   bottom: 20px;
@@ -223,13 +235,30 @@ main.content #top-dropdown .dropdown-menu a:hover {
   font-weight: bold;
   width: 150px;
 }
-
+@media (max-width: 767.9px) {
+  #listproperty .card-body .buttons .button .back-btn {
+    width: 100px;
+    border-color: #EA1E23;
+  }
+}
 #listproperty .card-body .buttons .button .upload-btn {
   background: #EA1E23;
   color: #ffffff;
   width: 150px;
 }
+@media (max-width: 767.9px) {
+  #listproperty .card-body .buttons .button .upload-btn {
+    width: 100px;
+  }
+}
 
+.hideFooter {
+  display: none;
+}
+@media (max-width: 767.9px) {
+  .hideFooter {
+    display: block;
+  }
 #list-property-1 div .row-wrapper .form-wrapper h1 {
   margin-left: 1.5rem;
 }

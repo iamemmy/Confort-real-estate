@@ -1213,7 +1213,6 @@
   background-color: #383838 !important;
   border: none;
 }
-
 #footer .form-container-div .form-control::-webkit-input-placeholder {
   color: white;
 }
@@ -1225,7 +1224,6 @@
 #footer .form-container-div .form-control::-ms-input-placeholder {
   color: white;
 }
-
 #footer .form-container-div .form-control::placeholder {
   color: white;
 }
