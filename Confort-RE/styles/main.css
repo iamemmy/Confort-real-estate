@@ -113,4 +113,53 @@ main.content #top-dropdown .dropdown-menu a:hover {
   transition: 0.3s ease;
   background-color: #000000 !important;
   color: #ffffff !important;
+}
+
+.favorite-lead-text {
+  font-size: 1.5rem;
+  color: #d60e0a;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.favorite-section .favorite-sec .favorite-item {
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  border-radius: 0.5rem;
+  box-shadow: 1px 3px 5px rgba(128, 128, 128, 0.199);
+}
+.favorite-section .favorite-sec .favorite-item img {
+  width: 300px;
+  height: 180px;
+}
+.favorite-section .favorite-sec .favorite-item .favorite-item-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+.favorite-section .favorite-sec .favorite-item div div .fa-solid {
+  color: #d60e0a;
+  margin-right: 0.2rem;
+}
+.favorite-section .favorite-sec .favorite-item div div .fa-heart {
+  color: #d60e0a;
+}
+.favorite-section .favorite-sec .favorite-item div div p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.favorite-section .favorite-sec .favorite-item div .property-price {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.favorite-section .favorite-sec .favorite-item div div .delete_icon {
+  width: 25px;
+  height: 25px;
+  background-color: #000000;
+  margin-left: 1rem;
+  border-radius: 2rem;
+}
+.favorite-section .favorite-sec .favorite-item div div .delete_icon .fa-trash {
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
