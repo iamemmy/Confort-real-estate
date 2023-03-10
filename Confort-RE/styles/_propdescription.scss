@@ -1,11 +1,496 @@
+// Ezekiel Styles
+#property-description {
+  font-family: "Lato";
+  font-style: normal;
+  .property-details {
+    width: 75vw;
+  }
+  .details-section {
+    display: flex;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    // background-color: getColor(color01);
+    .modal-content {
+      position: absolute;
+      top: 80%;
+      left: 68%;
+      transform: translate(-50%, -50%);
+      background-color: #fefefe;
+      margin: auto;
+      padding: 55px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 800px;
+      min-height: 400px;
+      input {
+        padding-left: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        &:focus {
+          outline: none;
+        }
+      }
+      textarea {
+        padding-left: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .close {
+      width: 30px;
+      color: getColor(color02);
+      font-size: 28px;
+      font-weight: bold;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bg-danger {
+    background-color: getColor(color02) !important ;
+  }
+  .btn-danger {
+    background-color: getColor(color02) !important;
+  }
+  .love-icon {
+    color: getColor(color02);
+  }
+  .favorite {
+    font-size: 27px;
+    font-weight: 400;
+  }
+  .send-message-tag {
+    margin-top: 1rem;
+    width: 300px;
+    background-color: getColor(color02);
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 0.75rem;
+    .img {
+      .image-message {
+        border-radius: 50%;
+      }
+      p {
+        padding-left: 0.5rem;
+        margin: auto;
+      }
+    }
+    .send {
+      font-size: 18px;
+      font-weight: 500;
+      margin-right: 4.5rem;
+    }
+  }
+
+  .hr-div {
+    .hr {
+      line-height: 0%;
+    }
+  }
+  .location {
+    font-size: 22px;
+    color: getColor(color02);
+    font-weight: 600;
+    font-style: normal;
+  }
+  .location-details {
+    font-size: 31px;
+  }
+  .price-tags {
+    padding-right: 5rem;
+    .heading {
+      color: getColor(color02);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      padding-bottom: 0.55rem;
+    }
+    p {
+      font-size: 27px;
+      text-align: center;
+    }
+  }
+  .image-bg {
+    background-image: url(../images/living-space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 625px;
+    width: 100vw;
+  }
+  .description-text {
+    font-weight: 600;
+    font-family: "Lato";
+    h5 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+
+  .hero-content {
+    padding-top: 30rem;
+    display: flex;
+    justify-content: center;
+    width: 75vw;
+    .divider {
+      height: 50px;
+      border: solid 1 !important;
+      border-color: getColor(color01) !important;
+    }
+  }
+}
+
+//max-width:1799px
+
+@media (max-width: 1799px) {
+  #property-description {
+    .hero-content {
+      width: 80vw;
+    }
+    .property-details {
+      width: 80vw;
+    }
+  }
+}
+
+// max-width: 1599px
+
+@media (max-width: 1599px) {
+  #property-description {
+    .hero-content {
+      width: 90vw;
+    }
+    .property-details {
+      width: 90vw;
+    }
+  }
+}
+
+//max-width: 1299px
+@media (max-width: 1299px) {
+  #property-description {
+    .hero-content {
+      width: 90vw;
+    }
+    .modal {
+      .modal-content {
+        top: 80%;
+        left: 65%;
+        max-width: 600px;
+        min-height: 100px;
+      }
+    }
+
+    .send-message-tag {
+      // width: 250px;
+      margin-left: 4rem;
+      p {
+        font-size: 20px;
+      }
+      .send {
+        font-size: 16px;
+      }
+    }
+    .favorite {
+      font-size: 24px;
+    }
+    .description-text {
+      font-weight: 600;
+      font-family: "Lato";
+      h5 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 26px;
+      }
+    }
+    .buttons {
+      .btn {
+        font-size: 14px;
+        padding: 0.55rem;
+      }
+    }
+    .property-details {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 28px;
+      width: 90vw;
+      .location {
+        font-size: 18px;
+      }
+      .location-details {
+        font-size: 18px;
+      }
+      .pricing-heading {
+        .price-tags {
+          padding-right: 2.5rem;
+          .heading {
+            font-size: 19px;
+            text-align: center;
+          }
+          p {
+            font-size: 22px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// max-width: 991px
+@media (max-width: 991px) {
+  #property-description {
+    .hero-content {
+      width: 90vw;
+    }
+    .modal {
+      .modal-content {
+        top: 80%;
+        left: 65%;
+        max-width: 500px;
+        min-height: 100px;
+      }
+    }
+
+    .send-message-tag {
+      width: 250px;
+      margin-left: 2.5rem;
+      p {
+        font-size: 18px;
+      }
+      .send {
+        font-size: 12px;
+      }
+    }
+    .favorite {
+      font-size: 14px;
+    }
+    .description-text {
+      font-weight: 600;
+      font-family: "Lato";
+      h5 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 22px;
+      }
+    }
+    .buttons {
+      .btn {
+        font-size: 14px;
+        padding: 0.55rem;
+      }
+    }
+    .property-details {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 90vw;
+      .location {
+        font-size: 14px;
+      }
+      .location-details {
+        font-size: 18px;
+      }
+      .pricing-heading {
+        .price-tags {
+          padding-right: 2rem;
+          .heading {
+            font-size: 12px;
+            text-align: center;
+          }
+          p {
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// max-width: 768px
+@media (max-width: 768px) {
+  #property-description {
+    .hero-content {
+      width: 90vw;
+    }
+    .modal {
+      .modal-content {
+        top: 70%;
+        left: 50%;
+        max-width: 400px;
+        min-height: 100px;
+      }
+    }
+
+    .send-message-tag {
+      width: 200px;
+      margin: 0;
+      margin-top: 1rem;
+      p {
+        font-size: 12px;
+      }
+      .send {
+        font-size: 11px;
+      }
+    }
+    .favorite {
+      font-size: 13px;
+    }
+    .details-section {
+      display: grid;
+    }
+    .description-text {
+      font-weight: 600;
+      font-family: "Lato";
+      h5 {
+        font-size: 17px;
+      }
+      p {
+        font-size: 21px;
+      }
+    }
+    .buttons {
+      .btn {
+        font-size: 13px;
+        padding: 0.3rem;
+      }
+    }
+    .property-details {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      width: 90vw;
+      .location {
+        font-size: 13px;
+      }
+      .location-details {
+        font-size: 17px;
+      }
+      .pricing-heading {
+        .price-tags {
+          padding-right: 4.3rem;
+          .heading {
+            font-size: 11px;
+            text-align: center;
+          }
+          p {
+            font-size: 13px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #property-description {
+    .hero-content {
+      width: 90vw;
+    }
+    .modal {
+      .modal-content {
+        top: 70%;
+        left: 50%;
+        max-width: 400px;
+        min-height: 100px;
+      }
+    }
+
+    .send-message-tag {
+      width: 200px;
+      margin: 0;
+      margin-top: 1rem;
+      p {
+        font-size: 11px;
+      }
+      .send {
+        font-size: 10px;
+      }
+    }
+    .favorite {
+      font-size: 12px;
+    }
+    .details-section {
+      display: grid;
+    }
+    .description-text {
+      font-weight: 600;
+      font-family: "Lato";
+      h5 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+    .buttons {
+      .btn {
+        font-size: 12px;
+        padding: 0.3rem;
+      }
+    }
+    .property-details {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      width: 90vw;
+      .location {
+        font-size: 12px;
+      }
+      .location-details {
+        font-size: 16px;
+      }
+      .pricing-heading {
+        .price-tags {
+          padding-right: 3rem;
+          .heading {
+            font-size: 10px;
+            text-align: center;
+          }
+          p {
+            font-size: 12px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Precious Styles
 #property_desc_sec {
   max-width: 1300px;
   margin: 0 auto;
   div {
     div {
-      div {
+      .property_desc_img {
+        display: flex;
+        @include landscape4 {
+          flex-direction: column-reverse;
+          justify-content: center;
+        }
         div {
           .property_desc_img_one {
+            margin-right: 1rem;
             img {
               margin-top: 2rem;
             }
@@ -15,37 +500,51 @@
               margin-bottom: 0;
             }
             img {
-              width: 95%;
-              margin-left: 2rem;
+              width: 100%;
+              @include landscape4 {
+                width: 100%;
+                margin-left: 0;
+              }
             }
             .property_details {
+              display: flex;
+              align-items: center;
               .property_details_text {
                 font-size: 1.3rem;
-                margin: 1rem 0 1.5rem 5rem;
+                margin: 1rem 0 1.5rem 2rem;
                 font-family: "Lato", sans-serif;
                 font-weight: 600;
+                margin-right: 1rem;
+                @include landscape4 {
+                  margin-left: 0;
+                }
               }
               .property_details_line {
-                width: 300px;
+                width: 40%;
                 height: 1px;
                 background-color: #000;
-                margin-left: 1.2rem;
                 margin-bottom: 0.5rem;
               }
             }
             .property_type-text,
             .propery_status-text {
               font-size: 1rem;
-              margin-left: 5rem;
+              margin-left: 2rem;
               font-family: "Roboto", sans-serif;
               font-weight: 600;
+              @include landscape4 {
+                margin-left: 0;
+              }
             }
             .property_type,
             .propery_status {
               font-size: 1.3rem;
-              margin: 0 0 1rem 5rem;
+              margin: 0 0 1rem 2rem;
               font-family: "Roboto", sans-serif;
               font-weight: 400;
+              @include landscape4 {
+                margin-left: 0;
+              }
             }
           }
         }
@@ -76,6 +575,9 @@
           background-color: getColor(color02);
           left: 3rem;
           bottom: 0.9rem;
+          @include landscape1 {
+            left: 0.7rem;
+          }
         }
       }
     }
