@@ -722,6 +722,13 @@
 #tour-section .tour-item .tour-item-price p:first-child {
   margin-right: 0.5rem;
 }
+#tour-section .owl-carousel .owl-item .card > img {
+  height: 250px !important;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 1rem 1rem 0;
+}
 
 @media (max-width: 1399px) {
   #tour-section .tour-item .tour-item-title {
@@ -761,7 +768,7 @@
 }
 @media (max-width: 767.9px) {
   #tour-section .arrows {
-    display: none;
+    text-align: center;
   }
   #tour-section .tour-section-header {
     padding-left: 2rem;

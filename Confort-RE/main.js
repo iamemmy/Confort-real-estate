@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var owl = $(".owl-carousel");
+  var owl = $("#owl-carousel");
   owl.owlCarousel({
     responsive: {
       0: {
@@ -22,6 +22,32 @@ $(document).ready(function () {
 
   $("#prev").click(function () {
     owl.trigger("prev.owl.carousel");
+  });
+
+  // Tour Carousel-Arrows
+  var owl2 = $("#owl-carousel-two");
+  owl2.owlCarousel({
+    responsive: {
+      0: {
+        items: 1,
+        loop: true,
+      },
+      600: {
+        items: 2,
+        loop: true,
+      },
+      1000: {
+        items: 3,
+        loop: true,
+      },
+    },
+  });
+  $("#next-first").click(function () {
+    owl2.trigger("next.owl.carousel");
+  });
+
+  $("#prev-first").click(function () {
+    owl2.trigger("prev.owl.carousel");
   });
 });
 
