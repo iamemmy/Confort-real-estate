@@ -1034,6 +1034,9 @@
 #property-description {
   font-family: "Lato";
   font-style: normal;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 #property-description .property-details {
   width: 75vw;
@@ -1162,6 +1165,8 @@
 #property-description .description-text {
   font-weight: 600;
   font-family: "Lato";
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 #property-description .description-text h5 {
   font-size: 22px;
@@ -1318,6 +1323,9 @@
   }
 }
 @media (max-width: 768px) {
+  #property-description .image-bg {
+    width: 100%;
+  }
   #property-description .hero-content {
     width: 90vw;
   }
@@ -1382,6 +1390,9 @@
   }
 }
 @media (max-width: 600px) {
+  #property-description .image-bg {
+    width: 100%;
+  }
   #property-description .hero-content {
     width: 90vw;
   }
@@ -1435,6 +1446,83 @@
   }
   #property-description .property-details .pricing-heading .price-tags {
     padding-right: 3rem;
+  }
+  #property-description .property-details .pricing-heading .price-tags .heading {
+    font-size: 10px;
+    text-align: center;
+  }
+  #property-description .property-details .pricing-heading .price-tags p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@media (max-width: 414px) {
+  #property-description .image-bg {
+    width: 100%;
+    height: 500px;
+  }
+  #property-description .hero-content {
+    padding-top: 22rem;
+    width: 90vw;
+  }
+  #property-description .hero-content .divider {
+    height: 75px;
+  }
+  #property-description .modal .modal-content {
+    top: 70%;
+    left: 50%;
+    max-width: 400px;
+    min-height: 100px;
+  }
+  #property-description .send-message-tag {
+    width: 200px;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  #property-description .send-message-tag p {
+    font-size: 11px;
+  }
+  #property-description .send-message-tag .send {
+    font-size: 10px;
+  }
+  #property-description .favorite {
+    font-size: 12px;
+  }
+  #property-description .details-section {
+    display: grid;
+  }
+  #property-description .description-text {
+    font-weight: 600;
+    font-family: "Lato";
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #property-description .description-text h5 {
+    font-size: 15px;
+  }
+  #property-description .description-text p {
+    font-size: 18px;
+  }
+  #property-description .buttons {
+    display: flex;
+    padding-left: 0.3rem;
+  }
+  #property-description .buttons .btn {
+    font-size: 12px;
+    padding: 0.2rem;
+    margin-right: 3px;
+  }
+  #property-description .property-details {
+    width: 90vw;
+  }
+  #property-description .property-details .location {
+    font-size: 11px;
+  }
+  #property-description .property-details .location-details {
+    font-size: 15px;
+  }
+  #property-description .property-details .pricing-heading .price-tags {
+    padding-right: 1rem;
   }
   #property-description .property-details .pricing-heading .price-tags .heading {
     font-size: 10px;
