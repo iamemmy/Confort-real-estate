@@ -1741,9 +1741,14 @@
 #about-us-section .div-mission hr {
   background-color: #ffffff !important;
   border: 0 none !important;
-  width: 80% !important;
+  width: 100% !important;
   height: 2px !important;
   margin: 0;
+}
+@media (max-width: 904.9px) {
+  #about-us-section .div-mission hr {
+    width: 80% !important;
+  }
 }
 #about-us-section .about-footer {
   background-color: #1a1a1a;
