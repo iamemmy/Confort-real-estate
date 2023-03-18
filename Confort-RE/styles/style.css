@@ -1649,4 +1649,102 @@
   #property_desc_sec div div div .show_more_text::after {
     left: 0.7rem;
   }
+}
+
+#about-us-section .about-nav-img {
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
+}
+#about-us-section .about-us-hero .hero-image-bg {
+  background-image: url(../images/little-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 30rem;
+}
+#about-us-section .about-us-hero .hero-image-bg .hero-heading {
+  color: #ffffff;
+  padding-top: 18rem;
+}
+#about-us-section .about-us-content {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+#about-us-section .about-us-content p {
+  font-size: 20px;
+  font-family: "Lato";
+  text-align: justify;
+}
+@media (max-width: 992.9px) {
+  #about-us-section .about-us-content p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767.9px) {
+  #about-us-section .about-us-content p {
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 992.9px) {
+  #about-us-section .about-us-content img {
+    height: auto;
+  }
+}
+#about-us-section .div-mission {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+#about-us-section .div-mission .mission-vision-value {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 904.9px) {
+  #about-us-section .div-mission .mission-vision-value {
+    display: grid;
+  }
+}
+#about-us-section .div-mission .mission-vision-value .mission,
+#about-us-section .div-mission .mission-vision-value .vision,
+#about-us-section .div-mission .mission-vision-value .value {
+  text-align: justify;
+  font-size: 16px;
+  font-family: "Lato";
+}
+#about-us-section .div-mission .mission-vision-value .mission h3,
+#about-us-section .div-mission .mission-vision-value .vision h3,
+#about-us-section .div-mission .mission-vision-value .value h3 {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Lato";
+  color: #d60e0a;
+}
+#about-us-section .div-mission .mission-vision-value .mission p span,
+#about-us-section .div-mission .mission-vision-value .vision p span,
+#about-us-section .div-mission .mission-vision-value .value p span {
+  color: #d60e0a;
+}
+@media (max-width: 904.9px) {
+  #about-us-section .div-mission .mission-vision-value .mission,
+  #about-us-section .div-mission .mission-vision-value .vision,
+  #about-us-section .div-mission .mission-vision-value .value {
+    width: 100% !important;
+    padding-bottom: 2rem;
+  }
+}
+#about-us-section .div-mission hr {
+  background-color: #ffffff !important;
+  border: 0 none !important;
+  width: 80% !important;
+  height: 2px !important;
+  margin: 0;
+}
+#about-us-section .about-footer {
+  background-color: #1a1a1a;
 }/*# sourceMappingURL=style.css.map */
