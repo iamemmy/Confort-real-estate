@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var owl = $(".owl-carousel");
+  var owl = $("#owl-carousel");
   owl.owlCarousel({
     responsive: {
       0: {
@@ -23,6 +23,32 @@ $(document).ready(function () {
   $("#prev").click(function () {
     owl.trigger("prev.owl.carousel");
   });
+
+  // Tour Carousel-Arrows
+  var owl2 = $("#owl-carousel-two");
+  owl2.owlCarousel({
+    responsive: {
+      0: {
+        items: 1,
+        loop: true,
+      },
+      600: {
+        items: 2,
+        loop: true,
+      },
+      1000: {
+        items: 3,
+        loop: true,
+      },
+    },
+  });
+  $("#next-first").click(function () {
+    owl2.trigger("next.owl.carousel");
+  });
+
+  $("#prev-first").click(function () {
+    owl2.trigger("prev.owl.carousel");
+  });
 });
 
 //COUNTER JS
@@ -45,15 +71,17 @@ const counter = (element, number, duration) => {
 // This checks if it has already counted
 let hasxecuted = false;
 
-window.onscroll = function () {
-  // Get the position and size of the element
-  const rect = why.getBoundingClientRect();
-  // Check if the top of the element is in the viewport
-  if (rect.top <= window.innerHeight && rect.bottom >= 0 && !hasxecuted) {
-    // set the has executed to true
-    hasxecuted = true;
-    counter("customers", 30, 70);
-    counter("units", 150, 70);
-    counter("units2", 200, 70);
-  }
-};
+window.onscroll = function(){
+    // Get the position and size of the element
+    const rect = why.getBoundingClientRect();
+    // Check if the top of the element is in the viewport
+    if (rect.top <= window.innerHeight && rect.bottom >= 0 && !hasxecuted) {
+        // set the has executed to true
+        hasxecuted = true;
+        counter('customers',30,70)
+        counter('units',150,70)
+        counter('units2',200,70)
+
+    } 
+
+}

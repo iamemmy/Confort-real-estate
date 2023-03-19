@@ -666,6 +666,7 @@
   border-color: red;
 }
 #tour-section .div-container {
+  width: -moz-fit-content;
   width: fit-content;
 }
 #tour-section .arrows {
@@ -705,6 +706,7 @@
 }
 #tour-section .tour-item .tour-item-image {
   height: 315px;
+  width: -moz-fit-content;
   width: fit-content;
   padding-bottom: 1rem;
 }
@@ -719,6 +721,13 @@
 }
 #tour-section .tour-item .tour-item-price p:first-child {
   margin-right: 0.5rem;
+}
+#tour-section .owl-carousel .owl-item .card > img {
+  height: 250px !important;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 1rem 1rem 0;
 }
 
 @media (max-width: 1399px) {
@@ -759,7 +768,7 @@
 }
 @media (max-width: 767.9px) {
   #tour-section .arrows {
-    display: none;
+    text-align: center;
   }
   #tour-section .tour-section-header {
     padding-left: 2rem;
@@ -882,7 +891,9 @@
   border-radius: 50%;
   padding: 20px 22px;
   transition: background-color 1s ease;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 #agentArea .arrows:active {
@@ -968,6 +979,9 @@
   background-color: #383838 !important;
   border: none;
 }
+#footer .form-container-div .form-control::-moz-placeholder {
+  color: white;
+}
 #footer .form-container-div .form-control::placeholder {
   color: white;
 }
@@ -999,7 +1013,9 @@
     text-align: center;
   }
   #footer .form-container-div {
+    min-width: -moz-fit-content;
     min-width: fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin: auto;
   }
@@ -1020,6 +1036,508 @@
   }
   #footer .copyright {
     font-size: 12px;
+  }
+}
+#property-description {
+  font-family: "Lato";
+  font-style: normal;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+#property-description .property-details {
+  width: 75vw;
+}
+#property-description .details-section {
+  display: flex;
+}
+#property-description .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+#property-description .modal .modal-content {
+  position: absolute;
+  top: 80%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  margin: auto;
+  padding: 55px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  min-height: 400px;
+}
+#property-description .modal .modal-content input {
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#property-description .modal .modal-content input:focus {
+  outline: none;
+}
+#property-description .modal .modal-content textarea {
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#property-description .modal .modal-content textarea:focus {
+  outline: none;
+}
+#property-description .modal .close {
+  width: 30px;
+  color: #d60e0a;
+  font-size: 28px;
+  font-weight: bold;
+}
+#property-description .modal .close:hover, #property-description .modal .close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+#property-description .bg-danger {
+  background-color: #d60e0a !important;
+}
+#property-description .btn-danger {
+  background-color: #d60e0a !important;
+}
+#property-description .love-icon {
+  color: #d60e0a;
+}
+#property-description .favorite {
+  font-size: 27px;
+  font-weight: 400;
+}
+#property-description .send-message-tag {
+  margin-top: 1rem;
+  width: 300px;
+  background-color: #d60e0a;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 0.75rem;
+}
+#property-description .send-message-tag .img .image-message {
+  border-radius: 50%;
+}
+#property-description .send-message-tag .img p {
+  padding-left: 0.5rem;
+  margin: auto;
+}
+#property-description .send-message-tag .send {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 4.5rem;
+}
+#property-description .hr-div .hr {
+  line-height: 0%;
+}
+#property-description .location {
+  font-size: 22px;
+  color: #d60e0a;
+  font-weight: 600;
+  font-style: normal;
+}
+#property-description .location-details {
+  font-size: 31px;
+}
+#property-description .price-tags {
+  padding-right: 5rem;
+}
+#property-description .price-tags .heading {
+  color: #d60e0a;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  padding-bottom: 0.55rem;
+}
+#property-description .price-tags p {
+  font-size: 27px;
+  text-align: center;
+}
+#property-description .image-bg {
+  background-image: url(../images/living-space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 625px;
+  width: 100vw;
+}
+#property-description .description-text {
+  font-weight: 600;
+  font-family: "Lato";
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+#property-description .description-text h5 {
+  font-size: 22px;
+}
+#property-description .description-text p {
+  font-size: 30px;
+}
+#property-description .hero-content {
+  padding-top: 30rem;
+  display: flex;
+  justify-content: center;
+  width: 75vw;
+}
+#property-description .hero-content .divider {
+  height: 50px;
+  border: solid 1 !important;
+  border-color: #ffffff !important;
+}
+
+@media (max-width: 1799px) {
+  #property-description .hero-content {
+    width: 80vw;
+  }
+  #property-description .property-details {
+    width: 80vw;
+  }
+}
+@media (max-width: 1599px) {
+  #property-description .hero-content {
+    width: 90vw;
+  }
+  #property-description .property-details {
+    width: 90vw;
+  }
+}
+@media (max-width: 1299px) {
+  #property-description .hero-content {
+    width: 90vw;
+  }
+  #property-description .modal .modal-content {
+    top: 80%;
+    left: 65%;
+    max-width: 600px;
+    min-height: 100px;
+  }
+  #property-description .send-message-tag {
+    margin-left: 4rem;
+  }
+  #property-description .send-message-tag p {
+    font-size: 20px;
+  }
+  #property-description .send-message-tag .send {
+    font-size: 16px;
+  }
+  #property-description .favorite {
+    font-size: 24px;
+  }
+  #property-description .description-text {
+    font-weight: 600;
+    font-family: "Lato";
+  }
+  #property-description .description-text h5 {
+    font-size: 20px;
+  }
+  #property-description .description-text p {
+    font-size: 26px;
+  }
+  #property-description .buttons .btn {
+    font-size: 14px;
+    padding: 0.55rem;
+  }
+  #property-description .property-details {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 28px;
+    width: 90vw;
+  }
+  #property-description .property-details .location {
+    font-size: 18px;
+  }
+  #property-description .property-details .location-details {
+    font-size: 18px;
+  }
+  #property-description .property-details .pricing-heading .price-tags {
+    padding-right: 2.5rem;
+  }
+  #property-description .property-details .pricing-heading .price-tags .heading {
+    font-size: 19px;
+    text-align: center;
+  }
+  #property-description .property-details .pricing-heading .price-tags p {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  #property-description .hero-content {
+    width: 90vw;
+  }
+  #property-description .modal .modal-content {
+    top: 80%;
+    left: 65%;
+    max-width: 500px;
+    min-height: 100px;
+  }
+  #property-description .send-message-tag {
+    width: 250px;
+    margin-left: 2.5rem;
+  }
+  #property-description .send-message-tag p {
+    font-size: 18px;
+  }
+  #property-description .send-message-tag .send {
+    font-size: 12px;
+  }
+  #property-description .favorite {
+    font-size: 14px;
+  }
+  #property-description .description-text {
+    font-weight: 600;
+    font-family: "Lato";
+  }
+  #property-description .description-text h5 {
+    font-size: 18px;
+  }
+  #property-description .description-text p {
+    font-size: 22px;
+  }
+  #property-description .buttons .btn {
+    font-size: 14px;
+    padding: 0.55rem;
+  }
+  #property-description .property-details {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 90vw;
+  }
+  #property-description .property-details .location {
+    font-size: 14px;
+  }
+  #property-description .property-details .location-details {
+    font-size: 18px;
+  }
+  #property-description .property-details .pricing-heading .price-tags {
+    padding-right: 2rem;
+  }
+  #property-description .property-details .pricing-heading .price-tags .heading {
+    font-size: 12px;
+    text-align: center;
+  }
+  #property-description .property-details .pricing-heading .price-tags p {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  #property-description .image-bg {
+    width: 100%;
+  }
+  #property-description .hero-content {
+    width: 90vw;
+  }
+  #property-description .modal .modal-content {
+    top: 70%;
+    left: 50%;
+    max-width: 400px;
+    min-height: 100px;
+  }
+  #property-description .send-message-tag {
+    width: 200px;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  #property-description .send-message-tag p {
+    font-size: 12px;
+  }
+  #property-description .send-message-tag .send {
+    font-size: 11px;
+  }
+  #property-description .favorite {
+    font-size: 13px;
+  }
+  #property-description .details-section {
+    display: grid;
+  }
+  #property-description .description-text {
+    font-weight: 600;
+    font-family: "Lato";
+  }
+  #property-description .description-text h5 {
+    font-size: 17px;
+  }
+  #property-description .description-text p {
+    font-size: 21px;
+  }
+  #property-description .buttons .btn {
+    font-size: 13px;
+    padding: 0.3rem;
+  }
+  #property-description .property-details {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 90vw;
+  }
+  #property-description .property-details .location {
+    font-size: 13px;
+  }
+  #property-description .property-details .location-details {
+    font-size: 17px;
+  }
+  #property-description .property-details .pricing-heading .price-tags {
+    padding-right: 4.3rem;
+  }
+  #property-description .property-details .pricing-heading .price-tags .heading {
+    font-size: 11px;
+    text-align: center;
+  }
+  #property-description .property-details .pricing-heading .price-tags p {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  #property-description .image-bg {
+    width: 100%;
+  }
+  #property-description .hero-content {
+    width: 90vw;
+  }
+  #property-description .modal .modal-content {
+    top: 70%;
+    left: 50%;
+    max-width: 400px;
+    min-height: 100px;
+  }
+  #property-description .send-message-tag {
+    width: 200px;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  #property-description .send-message-tag p {
+    font-size: 11px;
+  }
+  #property-description .send-message-tag .send {
+    font-size: 10px;
+  }
+  #property-description .favorite {
+    font-size: 12px;
+  }
+  #property-description .details-section {
+    display: grid;
+  }
+  #property-description .description-text {
+    font-weight: 600;
+    font-family: "Lato";
+  }
+  #property-description .description-text h5 {
+    font-size: 16px;
+  }
+  #property-description .description-text p {
+    font-size: 20px;
+  }
+  #property-description .buttons .btn {
+    font-size: 12px;
+    padding: 0.3rem;
+  }
+  #property-description .property-details {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 90vw;
+  }
+  #property-description .property-details .location {
+    font-size: 12px;
+  }
+  #property-description .property-details .location-details {
+    font-size: 16px;
+  }
+  #property-description .property-details .pricing-heading .price-tags {
+    padding-right: 3rem;
+  }
+  #property-description .property-details .pricing-heading .price-tags .heading {
+    font-size: 10px;
+    text-align: center;
+  }
+  #property-description .property-details .pricing-heading .price-tags p {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@media (max-width: 414px) {
+  #property-description .image-bg {
+    width: 100%;
+    height: 500px;
+  }
+  #property-description .hero-content {
+    padding-top: 22rem;
+    width: 90vw;
+  }
+  #property-description .hero-content .divider {
+    height: 75px;
+  }
+  #property-description .modal .modal-content {
+    top: 70%;
+    left: 50%;
+    max-width: 400px;
+    min-height: 100px;
+  }
+  #property-description .send-message-tag {
+    width: 200px;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  #property-description .send-message-tag p {
+    font-size: 11px;
+  }
+  #property-description .send-message-tag .send {
+    font-size: 10px;
+  }
+  #property-description .favorite {
+    font-size: 12px;
+  }
+  #property-description .details-section {
+    display: grid;
+  }
+  #property-description .description-text {
+    font-weight: 600;
+    font-family: "Lato";
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #property-description .description-text h5 {
+    font-size: 15px;
+  }
+  #property-description .description-text p {
+    font-size: 18px;
+  }
+  #property-description .buttons {
+    display: flex;
+    padding-left: 0.3rem;
+  }
+  #property-description .buttons .btn {
+    font-size: 12px;
+    padding: 0.2rem;
+    margin-right: 3px;
+  }
+  #property-description .property-details {
+    width: 90vw;
+  }
+  #property-description .property-details .location {
+    font-size: 11px;
+  }
+  #property-description .property-details .location-details {
+    font-size: 15px;
+  }
+  #property-description .property-details .pricing-heading .price-tags {
+    padding-right: 1rem;
+  }
+  #property-description .property-details .pricing-heading .price-tags .heading {
+    font-size: 10px;
+    text-align: center;
+  }
+  #property-description .property-details .pricing-heading .price-tags p {
+    font-size: 12px;
+    text-align: center;
   }
 }
 #property_desc_sec {
@@ -1131,4 +1649,107 @@
   #property_desc_sec div div div .show_more_text::after {
     left: 0.7rem;
   }
+}
+
+#about-us-section .about-nav-img {
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
+}
+#about-us-section .about-us-hero .hero-image-bg {
+  background-image: url(../images/little-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 30rem;
+}
+#about-us-section .about-us-hero .hero-image-bg .hero-heading {
+  color: #ffffff;
+  padding-top: 18rem;
+}
+#about-us-section .about-us-content {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+#about-us-section .about-us-content p {
+  font-size: 20px;
+  font-family: "Lato";
+  text-align: justify;
+}
+@media (max-width: 992.9px) {
+  #about-us-section .about-us-content p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767.9px) {
+  #about-us-section .about-us-content p {
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 992.9px) {
+  #about-us-section .about-us-content img {
+    height: auto;
+  }
+}
+#about-us-section .div-mission {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+#about-us-section .div-mission .mission-vision-value {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 904.9px) {
+  #about-us-section .div-mission .mission-vision-value {
+    display: grid;
+  }
+}
+#about-us-section .div-mission .mission-vision-value .mission,
+#about-us-section .div-mission .mission-vision-value .vision,
+#about-us-section .div-mission .mission-vision-value .value {
+  text-align: justify;
+  font-size: 16px;
+  font-family: "Lato";
+}
+#about-us-section .div-mission .mission-vision-value .mission h3,
+#about-us-section .div-mission .mission-vision-value .vision h3,
+#about-us-section .div-mission .mission-vision-value .value h3 {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Lato";
+  color: #d60e0a;
+}
+#about-us-section .div-mission .mission-vision-value .mission p span,
+#about-us-section .div-mission .mission-vision-value .vision p span,
+#about-us-section .div-mission .mission-vision-value .value p span {
+  color: #d60e0a;
+}
+@media (max-width: 904.9px) {
+  #about-us-section .div-mission .mission-vision-value .mission,
+  #about-us-section .div-mission .mission-vision-value .vision,
+  #about-us-section .div-mission .mission-vision-value .value {
+    width: 100% !important;
+    padding-bottom: 2rem;
+  }
+}
+#about-us-section .div-mission hr {
+  background-color: #ffffff !important;
+  border: 0 none !important;
+  width: 100% !important;
+  height: 2px !important;
+  margin: 0;
+}
+@media (max-width: 904.9px) {
+  #about-us-section .div-mission hr {
+    width: 80% !important;
+  }
+}
+#about-us-section .about-footer {
+  background-color: #1a1a1a;
 }/*# sourceMappingURL=style.css.map */
