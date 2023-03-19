@@ -124,7 +124,7 @@ main.content #top-dropdown .dropdown-menu a:hover {
   font-weight: 400;
 }
 #listproperty .head-text span {
-  color: #EA1E23;
+  color: #ea1e23;
 }
 #listproperty .card {
   height: 100vh;
@@ -145,7 +145,7 @@ main.content #top-dropdown .dropdown-menu a:hover {
 }
 #listproperty .card-body .form-group .custom-file .file-format {
   margin-top: 0;
-  color: #EA1E23;
+  color: #ea1e23;
 }
 #listproperty .card-body .form-group .custom-file .file-text {
   font-size: 1.5rem;
@@ -184,11 +184,11 @@ main.content #top-dropdown .dropdown-menu a:hover {
 @media (max-width: 767.9px) {
   #listproperty .card-body .buttons .button .back-btn {
     width: 100px;
-    border-color: #EA1E23;
+    border-color: #ea1e23;
   }
 }
 #listproperty .card-body .buttons .button .upload-btn {
-  background: #EA1E23;
+  background: #ea1e23;
   color: #ffffff;
   width: 150px;
 }
