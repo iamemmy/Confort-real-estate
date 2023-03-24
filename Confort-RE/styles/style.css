@@ -666,7 +666,6 @@
   border-color: red;
 }
 #tour-section .div-container {
-  width: -moz-fit-content;
   width: fit-content;
 }
 #tour-section .arrows {
@@ -706,7 +705,6 @@
 }
 #tour-section .tour-item .tour-item-image {
   height: 315px;
-  width: -moz-fit-content;
   width: fit-content;
   padding-bottom: 1rem;
 }
@@ -725,8 +723,7 @@
 #tour-section .owl-carousel .owl-item .card > img {
   height: 250px !important;
   aspect-ratio: 1/1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 0 1rem 1rem 0;
 }
 
@@ -891,9 +888,7 @@
   border-radius: 50%;
   padding: 20px 22px;
   transition: background-color 1s ease;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 #agentArea .arrows:active {
@@ -979,9 +974,6 @@
   background-color: #383838 !important;
   border: none;
 }
-#footer .form-container-div .form-control::-moz-placeholder {
-  color: white;
-}
 #footer .form-container-div .form-control::placeholder {
   color: white;
 }
@@ -1013,9 +1005,7 @@
     text-align: center;
   }
   #footer .form-container-div {
-    min-width: -moz-fit-content;
     min-width: fit-content;
-    max-width: -moz-fit-content;
     max-width: fit-content;
     margin: auto;
   }
@@ -1752,4 +1742,118 @@
 }
 #about-us-section .about-footer {
   background-color: #1a1a1a;
+}
+
+.about_us_img {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+.about_us_img .bg_cover {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/contact-image.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about_us_img .bg_cover h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+@media (max-width: 350.9px) {
+  .about_us_img .bg_cover h1 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 904.9px) {
+  .about_us_img {
+    height: 350px;
+  }
+}
+@media (max-width: 904.9px) {
+  .about_us_img {
+    height: 300px;
+  }
+}
+@media (max-width: 568.9px) {
+  .about_us_img {
+    height: 200px;
+  }
+}
+@media (max-width: 380.9px) {
+  .about_us_img {
+    height: 200px;
+  }
+}
+@media (max-width: 350.9px) {
+  .about_us_img {
+    height: 200px;
+  }
+}
+
+.contact div .contact_details h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+.contact div .contact_details p {
+  font-family: "Inter", sans-serif;
+}
+.contact div .contact_details p i {
+  color: #ea1e23;
+}
+.contact div .contact_form h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+}
+.contact div .contact_form form div div label {
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+.contact div .contact_form form div div input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+.contact div .contact_form form div div input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.contact div .contact_form form div .message label {
+  color: #000000;
+  font-family: "Inter", sans-serif;
+}
+.contact div .contact_form form div .message textarea {
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+.contact div .contact_form form div .message textarea::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.contact div .contact_form form .btn {
+  background-color: #ea1e23;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.map {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 60vh;
+}
+
+.map_bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
