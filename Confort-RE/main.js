@@ -71,30 +71,17 @@ const counter = (element, number, duration) => {
 // This checks if it has already counted
 let hasxecuted = false;
 
-window.onscroll = function () {
-  // Get the position and size of the element
-  const rect = why.getBoundingClientRect();
-  // Check if the top of the element is in the viewport
-  if (rect.top <= window.innerHeight && rect.bottom >= 0 && !hasxecuted) {
-    // set the has executed to true
-    hasxecuted = true;
-    counter("customers", 30, 70);
-    counter("units", 150, 70);
-    counter("units2", 200, 70);
-  }
-};
-// SEND MESSAGE FORM POP-UP
-const modal = document.getElementById("myModal");
-const btn = document.getElementById("myBtn");
-const span = document.getElementsByClassName("close")[0];
-btn.onclick = function () {
-  modal.style.display = "block";
-};
-span.onclick = function () {
-  modal.style.display = "none";
-};
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+window.onscroll = function(){
+    // Get the position and size of the element
+    const rect = why.getBoundingClientRect();
+    // Check if the top of the element is in the viewport
+    if (rect.top <= window.innerHeight && rect.bottom >= 0 && !hasxecuted) {
+        // set the has executed to true
+        hasxecuted = true;
+        counter('customers',30,70)
+        counter('units',150,70)
+        counter('units2',200,70)
+
+    } 
+
+}

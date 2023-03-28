@@ -33,8 +33,7 @@
 #sidebar .brand img {
   width: 100px;
   aspect-ratio: 1/1;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   display: block;
   margin: 0 auto;
 }
@@ -76,8 +75,7 @@ main.content #top-dropdown > a img {
   width: 50px;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 main.content #top-dropdown .dropdown-menu {
   background-color: #000000;
@@ -126,7 +124,7 @@ main.content #top-dropdown .dropdown-menu a:hover {
   font-weight: 400;
 }
 #listproperty .head-text span {
-  color: #EA1E23;
+  color: #ea1e23;
 }
 #listproperty .card {
   height: 100vh;
@@ -147,7 +145,7 @@ main.content #top-dropdown .dropdown-menu a:hover {
 }
 #listproperty .card-body .form-group .custom-file .file-format {
   margin-top: 0;
-  color: #EA1E23;
+  color: #ea1e23;
 }
 #listproperty .card-body .form-group .custom-file .file-text {
   font-size: 1.5rem;
@@ -186,11 +184,11 @@ main.content #top-dropdown .dropdown-menu a:hover {
 @media (max-width: 767.9px) {
   #listproperty .card-body .buttons .button .back-btn {
     width: 100px;
-    border-color: #EA1E23;
+    border-color: #ea1e23;
   }
 }
 #listproperty .card-body .buttons .button .upload-btn {
-  background: #EA1E23;
+  background: #ea1e23;
   color: #ffffff;
   width: 150px;
 }
