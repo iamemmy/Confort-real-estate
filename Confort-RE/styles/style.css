@@ -666,6 +666,7 @@
   border-color: red;
 }
 #tour-section .div-container {
+  width: -moz-fit-content;
   width: fit-content;
 }
 #tour-section .arrows {
@@ -705,6 +706,7 @@
 }
 #tour-section .tour-item .tour-item-image {
   height: 315px;
+  width: -moz-fit-content;
   width: fit-content;
   padding-bottom: 1rem;
 }
@@ -723,7 +725,8 @@
 #tour-section .owl-carousel .owl-item .card > img {
   height: 250px !important;
   aspect-ratio: 1/1;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0 1rem 1rem 0;
 }
 
@@ -888,7 +891,9 @@
   border-radius: 50%;
   padding: 20px 22px;
   transition: background-color 1s ease;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 #agentArea .arrows:active {
@@ -974,6 +979,9 @@
   background-color: #383838 !important;
   border: none;
 }
+#footer .form-container-div .form-control::-moz-placeholder {
+  color: white;
+}
 #footer .form-container-div .form-control::placeholder {
   color: white;
 }
@@ -1005,7 +1013,9 @@
     text-align: center;
   }
   #footer .form-container-div {
+    min-width: -moz-fit-content;
     min-width: fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin: auto;
   }
@@ -1816,6 +1826,9 @@
   border-radius: 5px;
   border: 1px solid #000000;
 }
+.contact div .contact_form form div div input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
 .contact div .contact_form form div div input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -1826,6 +1839,9 @@
 .contact div .contact_form form div .message textarea {
   border-radius: 5px;
   border: 1px solid #000000;
+}
+.contact div .contact_form form div .message textarea::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 .contact div .contact_form form div .message textarea::placeholder {
   color: rgba(0, 0, 0, 0.3);
@@ -1856,4 +1872,102 @@
   left: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
+}
+
+#gallery-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+#gallery-section .aside {
+  width: 400px;
+  min-width: 390px;
+  background-color: black;
+  height: 100%;
+  padding: 1rem;
+}
+#gallery-section .gallery {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 5rem 5rem;
+  border: solid red;
+  display: grid;
+  align-items: center;
+}
+#gallery-section .gallery-title {
+  display: flex;
+  width: 90%;
+  margin: 0 auto -5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+#gallery-section .gallery-title p {
+  font-size: 70px;
+}
+#gallery-section .gallery-title img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 5rem;
+}
+#gallery-section .gallery-title button {
+  background-color: black;
+  color: white;
+  padding: 20px 15px;
+  border-radius: 7px;
+  border: 1px solid black;
+  transition: 0.7s;
+  font-size: 25px;
+}
+#gallery-section .gallery-title button:hover {
+  background-color: white;
+  color: black;
+}
+#gallery-section .gallery-image {
+  width: 90%;
+  border-radius: 15px;
+  height: 80%;
+  margin: 0 auto;
+  aspect-ratio: 2/1;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  background-image: url(../images/home-keys.jpg);
+}
+#gallery-section .more-images {
+  width: 90%;
+  margin: -2rem auto 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+#gallery-section .more-images img {
+  width: 250px;
+  border-radius: 10px;
+}
+#gallery-section .go-back {
+  width: 15rem;
+  background-color: red;
+  color: white;
+  padding: 20px 15px;
+  border-radius: 7px;
+  font-size: 25px;
+  margin-top: 2rem;
+  border: 1px solid red;
+  transition: 0.7s;
+}
+#gallery-section .go-back:hover {
+  background-color: white;
+  color: red;
+}
+#gallery-section .button-go-back {
+  display: flex;
+  float: right;
+  align-items: center;
+  justify-content: end;
+  width: 90%;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
