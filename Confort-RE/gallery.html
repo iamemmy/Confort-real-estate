@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery</title>
+    <link rel="icon" type="image/png" href="./images/confort-logo.png" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,6 +40,56 @@
     />
   </head>
   <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark px-3 z-1" id="navlink-section">
+            <div class="container-fluid d-flex p-0">
+                <a class="navbar-brand mb-0">
+                    <img src="../Confort-RE/images/confort-logo.png" alt="log" class="d-inline-block align-top"
+                        width="100" />
+                </a>
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    class="navbar-toggler navbar--toggler" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a href="#buy" class="nav--item nav-link text-white px-3">Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sell" class="nav--item nav-link text-white px-3">Sell</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#rent" class="nav--item nav-link text-white px-3">Rent</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav--item text-white px-3 dropdown-toggle" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                List Properties
+                            </a>
+                            <ul class="dropdown-menu bg-dark border-0 " aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-white " href="#">Lorem, ipsum dolor.
+                                    </a></li>
+                                <li><a class="dropdown-item text-white" href="#">Lorem, ipsum dolor. </a></li>
+                                <li><a class="dropdown-item text-white" href="#">Lorem, ipsum dolor. </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav--item nav-link text-white px-3">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav--item nav-link text-white px-3">Contact</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="nav-item ">
+                            <img src="../Confort-RE/images/Ellipse 3 (1).png" alt="" class="about-nav-img ">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
     <section id="gallery-section">
       <!-- Sidebar Start -->
       <aside class="sidebar" id="sidebar">
@@ -110,16 +161,13 @@
             <div class="smaller-image">
               <img src="../Confort-RE/images/home-keys.jpg" alt="item" />
             </div>
-            <div class="smaller-image">
+            <div class="smaller-image ">
               <img src="../Confort-RE/images/home-keys.jpg" alt="item" />
             </div>
-            <div class="smaller-image">
+            <div class="smaller-image ">
               <img src="../Confort-RE/images/home-keys.jpg" alt="item" />
             </div>
-            <div class="smaller-image">
-              <img src="../Confort-RE/images/home-keys.jpg" alt="item" />
-            </div>
-            <div class="smaller-image">
+            <div class="smaller-image ">
               <img src="../Confort-RE/images/home-keys.jpg" alt="item" />
             </div>
           </div>
@@ -129,5 +177,116 @@
         </div>
       </div>
     </section>
+    <footer id="footer" class="bg-dark text-white pt-5 pb-2">
+      <section class="container-fluid px-3 text-md-left">
+        <div class="row text-md-left">
+          <section class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <a class="d-flex justify-content-around pb-5 pb-sm-4">
+              <img
+                src="../Confort-RE/images/confort-logo.png"
+                alt="log"
+                class="d-inline-block align-top"
+                width="100"
+              />
+            </a>
+            <div>
+              <p class="slogan-center">
+                The simple way to search for property to buy from.
+              </p>
+            </div>
+            <div class="row text-center w-50 mx-auto icon-div">
+              <a href="#" class="col-4 text-white">
+                <i class="fa-brands fa-twitter fa-2x"></i>
+              </a>
+              <a href="#" class="col-4 text-white">
+                <i class="fa-brands fa-instagram col-4 fa-2x"></i>
+              </a>
+              <a href="#" class="col-4 text-white">
+                <i class="fa-brands fa-youtube col-4 fa-2x"></i>
+              </a>
+            </div>
+          </section>
+          <div class="col-md-5 col-lg-4 col-xl-4 mx-auto mt-3">
+            <div class="d-flex justify-content-around p-0">
+              <section class="">
+                <p>
+                  <a
+                    href="#about"
+                    class="text-white"
+                    style="text-decoration: none"
+                    >About</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#careers"
+                    class="text-white"
+                    style="text-decoration: none"
+                    >Careers</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#contact-us"
+                    class="text-white"
+                    style="text-decoration: none"
+                    >Contact us</a
+                  >
+                </p>
+              </section>
+              <section>
+                <p>
+                  <a
+                    href="#contact-us"
+                    class="text-white"
+                    style="text-decoration: none"
+                    >Find an Agent</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#contact-us"
+                    class="text-white"
+                    style="text-decoration: none"
+                    >Site map</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="#contact-us"
+                    class="text-white"
+                    style="text-decoration: none"
+                    >Contact us</a
+                  >
+                </p>
+              </section>
+            </div>
+          </div>
+          <div
+            class="col-md-4 col-lg-3 col-xl-3 mt-3 px-lg-0 px-md-0 px-5 container subscribe-newsletter"
+          >
+            <p>Subscribe to our newsletter</p>
+            <div class="form-container-div">
+              <form class="form-inline d-flex justify-content-center">
+                <div class="form-group w-100">
+                  <input
+                    type="email"
+                    class="form-control text-white"
+                    id="emailInput"
+                    placeholder="Your email here"
+                  />
+                </div>
+                <button type="submit" class="my-arrow">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <section class="pt-5 text-center copyright">
+          Copyright by Confort Real Estate. All rights reserved. 2023
+        </section>
+      </section>
+    </footer>
   </body>
 </html>

@@ -1,8 +1,16 @@
 @import "dashboard/sidebar";
+#footer,
+nav {
+  display: none !important;
+  @include landscape4 {
+    display: block !important;
+    width: 100% !important;
+  }
+}
 #gallery-section {
   width: 100vw;
   // border: solid red;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   // justify-content: space-between;
   .aside {
@@ -106,6 +114,17 @@
           width: 100%;
           gap: 0.75rem;
         }
+        .smaller-image:nth-last-child(-n + 4) {
+          @include landscape4 {
+            display: none;
+          }
+        }
+        .smaller-image:nth-last-child(-n + 5) {
+          @include medium {
+            display: none;
+          }
+        }
+
         .smaller-image {
           // width: 19%;
           // border: solid blue;
@@ -132,6 +151,7 @@
       justify-content: flex-end;
       width: 99%;
       margin: 4rem auto 0;
+      // border: solid red !important;
       @include landscape4 {
         width: 100%;
         justify-content: center;
