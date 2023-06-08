@@ -9,12 +9,12 @@
     text-align: justify;
   }
   .form-container-div {
-    background-color: #383838;
+    background-color: getColor(color07) !important;
     border-radius: 0.5rem;
     min-width: 80%;
     max-width: 90%;
     .form-control {
-      background-color: #383838 !important;
+      background-color: getColor(color07) !important;
       border: none;
       &::placeholder {
         color: white;
@@ -25,7 +25,7 @@
     }
     .my-arrow {
       margin-right: 1rem;
-      background-color: #383838;
+      background-color: getColor(color07) !important;
       border: none;
       color: white;
     }

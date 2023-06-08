@@ -1,6 +1,7 @@
 #sidebar {
   background-color: #000000;
   width: 270px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,7 +34,8 @@
 #sidebar .brand img {
   width: 100px;
   aspect-ratio: 1/1;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   display: block;
   margin: 0 auto;
 }
@@ -75,7 +77,8 @@ main.content #top-dropdown > a img {
   width: 50px;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main.content #top-dropdown .dropdown-menu {
   background-color: #000000;

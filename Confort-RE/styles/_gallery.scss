@@ -1,0 +1,178 @@
+@import "dashboard/sidebar";
+#footer,
+nav {
+  display: none !important;
+  @include landscape4 {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+#gallery-section {
+  width: 100vw;
+  // border: solid red;
+  min-height: 100vh;
+  display: flex;
+  // justify-content: space-between;
+  .aside {
+    width: 400px;
+    min-width: 390px;
+    background-color: getColor(color03);
+    height: 100%;
+    padding: 1rem;
+  }
+  .gallery-container {
+    width: 100%;
+    // flex: 1;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include landscape4 {
+      padding: 1rem;
+    }
+    .gallery-title-container {
+      width: 99%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      @include landscape4 {
+        gap: 1rem;
+      }
+      p {
+        flex: 1;
+        font-size: 50px;
+        @include landscape4 {
+          font-size: 40px;
+        }
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 3rem;
+        @include landscape4 {
+          width: 40px;
+          height: 40px;
+          margin-left: 0.25rem;
+        }
+      }
+      button {
+        background-color: getColor(color03);
+        color: white;
+        padding: 15px 20px;
+        border-radius: 7px;
+        border: 1px solid getColor(color03);
+        transition: 0.7s;
+        font-size: 25px;
+        &:hover {
+          background-color: white;
+          color: getColor(color03);
+        }
+        @include landscape4 {
+          padding: 10px 15px;
+          font-size: 15px;
+        }
+      }
+    }
+    .all-gallery-images {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      @include landscape4 {
+        gap: 1rem;
+      }
+      .big-image {
+        width: 99%;
+        @include landscape4 {
+          width: 100%;
+        }
+        // border: solid green;
+        img {
+          width: 100%;
+          overflow: hidden;
+          aspect-ratio: 1/0.3;
+          margin: 0 auto;
+          border-radius: 15px;
+          object-fit: cover;
+          @include landscape4 {
+            aspect-ratio: 1/0.75;
+          }
+        }
+      }
+      .smaller-images-container {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        // border: solid blue;
+        width: 99%;
+        @include landscape4 {
+          width: 100%;
+          gap: 0.75rem;
+        }
+        .smaller-image:nth-last-child(-n + 4) {
+          @include landscape4 {
+            display: none;
+          }
+        }
+        .smaller-image:nth-last-child(-n + 5) {
+          @include medium {
+            display: none;
+          }
+        }
+
+        .smaller-image {
+          // width: 19%;
+          // border: solid blue;
+          img {
+            width: 128px;
+            height: 135px;
+            border-radius: 7px;
+            overflow: hidden;
+            // aspect-ratio: 1/0.35;
+            margin: 0 auto;
+            object-fit: cover;
+            @include landscape4 {
+              width: 60px;
+              height: 70px;
+            }
+          }
+        }
+      }
+    }
+    .button-go-back {
+      display: flex;
+      // float: right;
+      align-items: center;
+      justify-content: flex-end;
+      width: 99%;
+      margin: 4rem auto 0;
+      // border: solid red !important;
+      @include landscape4 {
+        width: 100%;
+        justify-content: center;
+      }
+      .go-back {
+        background-color: getColor(color02);
+        color: white;
+        padding: 15px 20px;
+        border-radius: 7px;
+        border: 1px solid getColor(color02);
+        transition: 0.7s;
+        font-size: 25px;
+        &:hover {
+          background-color: white;
+          color: getColor(color02);
+        }
+        @include landscape4 {
+          width: 100%;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
