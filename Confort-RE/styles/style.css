@@ -666,6 +666,7 @@
   border-color: red;
 }
 #tour-section .div-container {
+  width: -moz-fit-content;
   width: fit-content;
 }
 #tour-section .arrows {
@@ -705,6 +706,7 @@
 }
 #tour-section .tour-item .tour-item-image {
   height: 315px;
+  width: -moz-fit-content;
   width: fit-content;
   padding-bottom: 1rem;
 }
@@ -723,7 +725,8 @@
 #tour-section .owl-carousel .owl-item .card > img {
   height: 250px !important;
   aspect-ratio: 1/1;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0 1rem 1rem 0;
 }
 
@@ -888,7 +891,9 @@
   border-radius: 50%;
   padding: 20px 22px;
   transition: background-color 1s ease;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 #agentArea .arrows:active {
@@ -974,6 +979,9 @@
   background-color: #383838 !important;
   border: none;
 }
+#footer .form-container-div .form-control::-moz-placeholder {
+  color: white;
+}
 #footer .form-container-div .form-control::placeholder {
   color: white;
 }
@@ -1005,7 +1013,9 @@
     text-align: center;
   }
   #footer .form-container-div {
+    min-width: -moz-fit-content;
     min-width: fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
     margin: auto;
   }
@@ -1816,6 +1826,9 @@
   border-radius: 5px;
   border: 1px solid #000000;
 }
+.contact div .contact_form form div div input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
 .contact div .contact_form form div div input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -1826,6 +1839,9 @@
 .contact div .contact_form form div .message textarea {
   border-radius: 5px;
   border: 1px solid #000000;
+}
+.contact div .contact_form form div .message textarea::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 .contact div .contact_form form div .message textarea::placeholder {
   color: rgba(0, 0, 0, 0.3);
