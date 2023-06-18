@@ -1,6 +1,6 @@
 @import "dashboard/sidebar";
-#footer,
-nav {
+.gallery-footer,
+.gallery-nav {
   display: none !important;
   @include landscape4 {
     display: block !important;
