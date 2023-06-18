@@ -1854,8 +1854,9 @@
 }
 
 .map {
-  width: 100%;
+  width: 95%;
   height: 60vh;
+  margin: 2rem auto;
   position: relative;
 }
 
