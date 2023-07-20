@@ -1,10 +1,16 @@
 #navlink-section {
+  display: block !important;
   font-family: "Lato";
   font-size: 16px;
   font-weight: 400;
-
+  .dropdown-item {
+    font-size: 14px;
+    &:hover {
+      background-color: getColor(color02) !important;
+    }
+  }
   .nav--item:hover {
-    color: red !important;
+    color: getColor(color02) !important ;
   }
   .navbar--toggler:focus {
     box-shadow: none !important;
@@ -12,10 +18,20 @@
 }
 @media (max-width: 790px) {
   #navlink-section {
-    font-size: 15px !important;
+    font-size: 14px !important;
     .sign-in-up {
       width: 50%;
       margin: auto;
+    }
+    .dropdown-menu {
+      width: 50%;
+      margin: auto;
+    }
+    .dropdown-item {
+      font-size: 13px;
+      &:hover {
+        background-color: transparent !important;
+      }
     }
   }
 }

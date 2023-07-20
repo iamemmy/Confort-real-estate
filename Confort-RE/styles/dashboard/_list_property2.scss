@@ -1,0 +1,86 @@
+#listproperty {
+    font-family: 'Lato', sans-serif;
+    .head-text {
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: 400;
+        span {
+            color: getColor(color06);
+        }
+    }
+    .card {
+        height: 100vh;
+        @include landscape4 {
+            height: 400px;
+        }
+    }
+    .card-body {
+        position: relative;
+        .title, .upload-title {
+            font-weight: bold;
+        }
+        .upload-title {
+            margin-bottom: 0;
+        }
+        .form-group {
+            .custom-file {
+                .file-format {
+                    margin-top: 0;
+                    color: getColor(color06);
+                }
+                .file-text {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+                input[type=file] {
+                    display: none;
+                }
+                .file-upload {
+                    margin: 0.1rem 0.5rem 1rem 0.5rem;
+                    border-radius: 50%;
+                    background-color: #D9D9D9;
+                    padding: 1rem 1.5rem 1rem 1.5rem;
+                    cursor: pointer;
+                    font-size: 1.5rem;
+                }
+                .upload-info {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .buttons {
+            @include landscape4 {
+                display: flex;
+                justify-content: center;
+            }
+            .button {
+                position: absolute;
+                bottom: 20px;
+                .back-btn {
+                    background: getColor(color01);
+                    font-weight: bold;
+                    width: 150px;
+                    @include landscape4 {
+                        width: 100px;
+                        border-color: getColor(color06);
+                    }
+                }
+                .upload-btn {
+                    background: getColor(color06);
+                    color: getColor(color01);
+                    width: 150px;
+                    @include landscape4 {
+                        width: 100px;
+                    }
+                }
+            }  
+        }  
+    }  
+}
+.hideFooter {
+    display: none;
+    @include landscape4 {
+        display: block;
+    }
+} 

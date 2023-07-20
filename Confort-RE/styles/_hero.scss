@@ -24,10 +24,10 @@
     background-position: center;
     position: fixed;
     @include landscape{
-        height: 52vh;
+        height: 80vh;
      }
     @include portrait {
-        height: 62vh;
+        height: 80vh;
     }
 }
 .bg_img1, .bg_img2, .bg_img3, .bg_img5 {
@@ -43,10 +43,16 @@
     justify-content: center;
     align-items: center;
     @include landscape {
-        top: 22%;
+        top: 38%;
+    }
+    @include landscape2 {
+        top: 33%;
+    }
+    @include landscape3 {
+        top: 28%;
     }
     @include portrait {
-        top: 26% !important;
+        top: 24% !important;
     }
    
     h1 {
@@ -58,8 +64,17 @@
         font-size: 2.8rem !important;
         top: 32%;
     }
+    @include landscape2 {
+        font-size: 2.4rem !important;
+    }
+    @include landscape3 {
+        font-size: 2.2rem !important;
+    }
     @include portrait {
-        font-size: 2.1rem !important;
+        font-size: 2rem !important;
+    }
+    @include medium {
+        font-size: 1.8rem !important;
     }
 }
 }
@@ -71,8 +86,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include landscape{
-       top: 30%;
+    @include landscape {
+       top: 50%;
+    }
+    @include landscape2 {
+        top: 45%;
     }
     @include portrait {
         top: 41% !important;
@@ -106,16 +124,22 @@
      top: 80%;
      transform: translate(-50%, 0);
      font-size: 1.1rem;
-     @include landscape2 {
-        width: 90%;
-        display: block;
-        background-color: inherit;
-        border: none;
-        top: 37%;
-     }
-     @include portrait {
-        top: 50%;
-    }
+        @include landscape {
+            top: 65%;
+        }
+        @include landscape2 {
+            width: 90%;
+            display: block;
+            background-color: inherit;
+            border: none;
+            top: 58%;
+        }
+        @include landscape3 {
+            top: 60%;
+        }
+        @include portrait {
+            top: 60%;
+        }
      .search-bar1 {
         width: 100%;
         @include landscape2 {
@@ -138,6 +162,9 @@
         align-items: center;
         gap: 10px;
         justify-content: start;
+        @include landscape {
+            border-left: none;
+        }
         @include landscape2 {
             border-left: none;
             background-color: getColor(color01);
@@ -172,5 +199,13 @@
     @include landscape2 {
         padding-right: 0;
         width: 100%;
+    }
+}
+
+.dashboard {
+    background-color: getColor(color02) !important;
+    @include medium {
+        margin-bottom: 1.2rem !important;
+        margin-top: 1.2rem !important;
     }
 }

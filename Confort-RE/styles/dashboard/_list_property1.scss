@@ -1,0 +1,76 @@
+#list-property-1 {
+    div {
+        .row-wrapper {
+            .form-wrapper {
+                h1 {
+                    margin-left: 1.5rem;
+                    .property-span {
+                        color: getColor(color02) ;
+                    }
+                }
+                form {
+                    border: 1px solid gainsboro;
+                    padding: 1.5rem;
+                    width: 80vw;
+
+                    .select-wrapper-1 {
+                        display: grid;
+                        grid-template-columns: repeat( 3, 1fr);
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 1rem 0px;
+                        select {
+                            padding: 1rem;
+                            padding-right: 0.7rem;
+                            border-radius: 0.5rem;
+                            margin-right: 0.6rem;
+                            border: 0.1rem solid grey;
+                        }
+                    }
+                    .select-wrapper-2 {
+                        width: 100%;
+                        padding: 0.7rem 1rem;
+                        border-radius: 0.5rem;
+                        padding-inline: 1rem 0rem;
+                    }
+                    .input-wrapper {
+                        padding: 1rem 1rem;
+                        padding-right: 2rem;
+                        border-radius: 0.5rem;
+                        margin-right: 0.5rem;
+                        padding-inline: 1rem 1rem;
+                    }
+                    .checkbox-wrapper {
+                       input {
+                         margin-right: 10px;
+                       }
+                    }
+                   .textarea-wrap {
+                        textarea {
+                        border-radius: 0.5rem;
+                        padding-left: 1rem;
+                        font-size: 20px;
+                        margin-bottom: 0.6rem;
+                        max-width: 30rem;
+                    }
+                   }
+                   .button-wrap {
+                    display: flex;
+                    align-items: center;
+                    justify-content: right;
+                        button {
+                    background-color: getColor(color02);
+                    border: 0.2rem solid getColor(color02);
+                    padding: 0.7rem 3.3rem;
+                    border-radius: 0.5rem;
+                         a {
+                     color: getColor(color01);
+                     text-decoration: none;
+                   }
+                   }
+                   }
+                }
+            }
+        }
+    }
+  }

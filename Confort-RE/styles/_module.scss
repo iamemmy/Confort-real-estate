@@ -3,49 +3,63 @@
 // }
 
 //Variable
-$colors:(
-    color01: #ffffff,
-    color02: #d60e0a,
-    color03: #000000,
-    color04: #008000
-
+$colors: (
+  color01: #ffffff,
+  color02: #d60e0a,
+  color03: #000000,
+  color04: #008000,
+  color05: #3e4040,
+  color06: #ea1e23,
+  color07: #383838
 );
 
 // Function
-@function getColor($key){
-    @return map-get($colors, $key);
+@function getColor($key) {
+  @return map-get($colors, $key);
 }
 
 @mixin landscape {
-    @media (max-width: 992.9px) {
-        @content;
-    }
+  @media (max-width: 1040.9px) {
+    @content;
+  }
+}
+
+@mixin landscape1 {
+  @media (max-width: 992.9px) {
+    @content;
+  }
 }
 
 @mixin landscape2 {
-    @media (max-width: 904.9px) {
-        @content;
-    }
+  @media (max-width: 904.9px) {
+    @content;
+  }
 }
 
 @mixin landscape3 {
-    @media (max-width: 765.9px) {
-        @content;
-    }
+  @media (max-width: 820.9px) {
+    @content;
+  }
+}
+
+@mixin landscape4 {
+  @media (max-width: 767.9px) {
+    @content;
+  }
 }
 
 @mixin portrait {
-    @media (max-width: 568.9px) {
-        @content;
-    }
+  @media (max-width: 568.9px) {
+    @content;
+  }
 }
 @mixin medium {
-    @media (max-width: 380.9px) {
-        @content;
-    }
+  @media (max-width: 380.9px) {
+    @content;
+  }
 }
 @mixin small {
-    @media (max-width: 350.9px) {
-        @content;
-    }
+  @media (max-width: 350.9px) {
+    @content;
+  }
 }

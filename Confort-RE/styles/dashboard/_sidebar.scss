@@ -1,0 +1,75 @@
+// Sidebar
+#sidebar {
+  background-color: getColor(color03);
+  width: 270px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: margin-left 0.45s linear;
+  @include landscape3 {
+    margin-left: -270px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 99999 !important;
+  }
+  &.show {
+    margin-left: -270px;
+    @include landscape3 {
+      margin-left: 0;
+    }
+  }
+
+  // Brand
+  .brand {
+    text-decoration: none;
+    border-bottom: 1px solid getColor(color01);
+    margin-bottom: 10px;
+    img {
+      width: 100px;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  // Links
+
+  .sidebar-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    a {
+      text-decoration: none;
+      color: getColor(color01);
+      transition: 0.45s ease;
+
+      &.active {
+        box-shadow: 1px 1px 0 0 getColor(color01);
+        padding-bottom: 0.5rem;
+        padding-right: 1.5rem;
+        border-bottom-right-radius: 10px;
+      }
+      &:hover {
+        padding-right: 10px;
+        padding-bottom: 5px;
+        box-shadow: 1px 1px 0 0 getColor(color01);
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+
+  #logout {
+    margin-top: 10rem;
+    margin-bottom: 13rem;
+    text-decoration: none;
+    color: getColor(color01);
+    padding-left: 2rem;
+  }
+}
